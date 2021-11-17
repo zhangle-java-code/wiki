@@ -2,7 +2,10 @@ package com.zh.wiki.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 //! 代码返回页面
 //@Controller
@@ -10,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    //! 支持所有请求方式
+    //! 支持所有请求方式`
     //@RequestMapping("/hello")
     @GetMapping("/hello")
     //@PostMapping("/hello")
@@ -18,5 +21,11 @@ public class TestController {
     //@DeleteMapping("/hello")
     public String hello(){
         return "hello world1";
+    }
+
+
+    @PostMapping("/hello/post")
+    public String helloPost(String name){
+        return "hello world! post, " + name;
     }
 }
