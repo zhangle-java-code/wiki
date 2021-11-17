@@ -1,11 +1,17 @@
-package com.zh.wiki;
+package com.zh.wiki.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+//! 扫描当前路径下面包的 controller
+// 可以扫描第三方包
+//@ComponentScan({"com.zh","com.test"})
+// !扫描制定目录下面的包
+@ComponentScan("com.zh")
 @SpringBootApplication
 public class WikiApplication {
 
