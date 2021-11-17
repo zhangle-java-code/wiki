@@ -1,0 +1,85 @@
+2021-11-17 06:24:05.739 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 50780 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 06:24:05.747 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 06:24:07.025 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 06:24:07.041 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:24:07.043 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 06:24:07.043 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 06:24:07.164 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 06:24:07.164 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1328 ms
+2021-11-17 06:24:07.537 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:24:07.555 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 06:24:07.566 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.644 seconds (JVM running for 4.548)
+2021-11-17 06:24:24.404 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 42596 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 06:24:24.408 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 06:24:25.462 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 06:24:25.473 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:24:25.474 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 06:24:25.474 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 06:24:25.586 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 06:24:25.587 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1115 ms
+2021-11-17 06:24:25.890 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:24:25.903 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 06:24:25.912 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.303 seconds (JVM running for 4.335)
+2021-11-17 06:25:09.728 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 50464 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 06:25:09.733 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 06:25:10.745 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 06:25:10.760 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:25:10.761 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 06:25:10.761 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 06:25:10.874 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 06:25:10.875 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1076 ms
+2021-11-17 06:25:11.213 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:25:11.230 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 06:25:11.240 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.142 seconds (JVM running for 3.663)
+2021-11-17 06:39:44.385 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 44672 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 06:39:44.391 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 06:39:45.611 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 06:39:45.624 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:39:45.625 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 06:39:45.626 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 06:39:45.743 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 06:39:45.743 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1281 ms
+2021-11-17 06:39:46.135 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 06:39:46.164 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 06:39:46.176 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.604 seconds (JVM running for 4.488)
+2021-11-17 06:39:46.179 INFO  com.zh.wiki.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
+2021-11-17 06:39:46.180 INFO  com.zh.wiki.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-17 20:53:52.818 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 55672 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 20:53:52.824 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 20:53:54.218 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 20:53:54.231 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 20:53:54.233 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 20:53:54.233 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 20:53:54.379 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 20:53:54.380 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1479 ms
+2021-11-17 20:53:54.787 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 20:53:54.808 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 20:53:54.821 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.886 seconds (JVM running for 4.484)
+2021-11-17 20:53:54.827 INFO  com.zh.wiki.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
+2021-11-17 20:53:54.827 INFO  com.zh.wiki.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-17 20:57:21.844 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 51188 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 20:57:21.849 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 20:57:23.129 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 20:57:23.141 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 20:57:23.142 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 20:57:23.142 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 20:57:23.253 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 20:57:23.254 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1287 ms
+2021-11-17 20:57:23.625 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 20:57:23.656 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 20:57:23.667 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.688 seconds (JVM running for 4.638)
+2021-11-17 20:57:23.670 INFO  com.zh.wiki.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
+2021-11-17 20:57:23.671 INFO  com.zh.wiki.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:null
+2021-11-17 21:02:04.337 INFO  com.zh.wiki.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 42868 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-17 21:02:04.343 INFO  com.zh.wiki.WikiApplication                       :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-17 21:02:05.521 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-17 21:02:05.534 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-17 21:02:05.536 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-17 21:02:05.536 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 21:02:05.643 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-17 21:02:05.643 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1205 ms
+2021-11-17 21:02:05.944 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-17 21:02:05.958 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 21:02:05.968 INFO  com.zh.wiki.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.333 seconds (JVM running for 3.533)
+2021-11-17 21:02:05.970 INFO  com.zh.wiki.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
+2021-11-17 21:02:05.970 INFO  com.zh.wiki.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:null
