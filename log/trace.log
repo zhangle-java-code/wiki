@@ -458,3 +458,48 @@ Consider defining a bean of type 'com.zh.wiki.service.DemoService' in your confi
 2021-11-20 21:56:55.245 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2021-11-20 21:56:55.246 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
 2021-11-20 21:56:55.247 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-20 21:59:19.438 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 83840 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-20 21:59:19.439 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-20 21:59:19.765 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-20 21:59:19.766 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-20 21:59:19.766 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-20 21:59:19.766 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-20 21:59:19.789 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-20 21:59:19.790 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 348 ms
+2021-11-20 21:59:19.905 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-20 21:59:19.913 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-20 21:59:19.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-20 21:59:19.919 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.525 seconds (JVM running for 1334.647)
+2021-11-20 21:59:19.920 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-20 21:59:19.920 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-20 21:59:19.921 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-20 22:05:29.213 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 83840 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-20 22:05:29.214 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-20 22:05:29.623 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-20 22:05:29.624 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-20 22:05:29.624 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-20 22:05:29.624 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-20 22:05:29.655 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-20 22:05:29.656 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 439 ms
+2021-11-20 22:05:29.820 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-20 22:05:29.834 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-20 22:05:29.838 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-20 22:05:29.845 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.687 seconds (JVM running for 1704.573)
+2021-11-20 22:05:29.848 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-20 22:05:29.849 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-20 22:05:29.850 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-20 22:05:34.120 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 83840 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-20 22:05:34.120 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-20 22:05:34.482 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-20 22:05:34.482 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-20 22:05:34.483 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-20 22:05:34.483 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-20 22:05:34.513 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-20 22:05:34.514 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 388 ms
+2021-11-20 22:05:34.647 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-20 22:05:34.655 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-20 22:05:34.657 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-20 22:05:34.660 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.62 seconds (JVM running for 1709.389)
+2021-11-20 22:05:34.662 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-20 22:05:34.663 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-20 22:05:34.663 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
