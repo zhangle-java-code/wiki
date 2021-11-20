@@ -1,5 +1,6 @@
 package com.zh.wiki.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +14,7 @@ import org.springframework.core.env.Environment;
 // !扫描制定目录下面的包
 @ComponentScan("com.zh")
 @SpringBootApplication
+@MapperScan("com.zh.wiki.mapper")
 public class WikiApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(WikiApplication.class);
