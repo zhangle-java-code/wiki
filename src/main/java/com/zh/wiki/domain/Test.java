@@ -1,4 +1,4 @@
-package com.zh.wiki.domin;
+package com.zh.wiki.domain;
 
 public class Test {
     private Integer id;

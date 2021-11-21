@@ -1,6 +1,6 @@
 package com.zh.wiki.service;
 
-import com.zh.wiki.domin.Test;
+import com.zh.wiki.domain.Test;
 import com.zh.wiki.mapper.TestMapper;
 import org.springframework.stereotype.Service;
 

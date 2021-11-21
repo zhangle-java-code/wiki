@@ -1,6 +1,6 @@
 package com.zh.wiki.mapper;
 
-import com.zh.wiki.domin.Test;
+import com.zh.wiki.domain.Test;
 
 import java.util.List;
 

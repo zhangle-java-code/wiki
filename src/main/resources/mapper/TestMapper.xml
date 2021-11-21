@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.zh.wiki.mapper.TestMapper">
-    <select id="list" resultType="com.zh.wiki.domin.Test">
+    <select id="list" resultType="com.zh.wiki.domain.Test">
         select `id`,`name`,`password` from `test`
     </select>
 </mapper>
