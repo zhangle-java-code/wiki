@@ -46,7 +46,7 @@ public class LogAspect {
         String name = signature.getName();
 
         // 打印请求信息
-        LOG.info("------------- 开始 -------------");
+        LOG.warn("------------- 开始 aspect -------------");
         LOG.info("请求地址: {} {}", request.getRequestURL().toString(), request.getMethod());
         LOG.info("类名方法: {}.{}", signature.getDeclaringTypeName(), name);
         LOG.info("远程地址: {}", request.getRemoteAddr());
