@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -31,14 +32,18 @@ public class EbookService {
         // ! 查询条件固定写法
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
-        criteria.andNameLike("%" + req.getName() + "%");
+
+
+        if (!ObjectUtils.isEmpty(req.getName())){
+            criteria.andNameLike("%" + req.getName() + "%");
+        }
         // ! 查询条件固定写法
-        PageHelper.startPage(1,3);
+        PageHelper.startPage(req.getPage(),req.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
         //! 查询总页数
-        PageInfo<Ebook> pageInfo = new PageInfo<>();
-        LOG.warn("总行数: {}", pageInfo.getTotal());
-        LOG.info("总行数: {}", pageInfo.getPages());
+        //PageInfo<Ebook> pageInfo = new PageInfo<>();
+        //LOG.warn("总行数: {}", pageInfo.getTotal());
+        //LOG.info("总行数: {}", pageInfo.getPages());
 
         //List<EbookResp> respList = new ArrayList<>();
  //       for (Ebook ebook : ebooksList) {
