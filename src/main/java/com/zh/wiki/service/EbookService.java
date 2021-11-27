@@ -5,19 +5,17 @@ import com.github.pagehelper.PageInfo;
 import com.zh.wiki.domain.Ebook;
 import com.zh.wiki.domain.EbookExample;
 import com.zh.wiki.mapper.EbookMapper;
-import com.zh.wiki.req.EbookReq;
-import com.zh.wiki.resp.CommonResp;
-import com.zh.wiki.resp.EbookResp;
+import com.zh.wiki.req.EbookQueryReq;
+import com.zh.wiki.req.EbookSaveReq;
+import com.zh.wiki.resp.EbookQueryResp;
 import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.util.CopyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -29,7 +27,7 @@ public class EbookService {
     private EbookMapper ebookMapper;
 
 
-    public PageResp<EbookResp> list(EbookReq req){
+    public PageResp<EbookQueryResp> list(EbookQueryReq req){
         // ! 查询条件固定写法
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
@@ -59,11 +57,22 @@ public class EbookService {
  //       return respList;
 
         // ! 循环，进行属性赋值
-        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
-        PageResp<EbookResp> pageResp = new PageResp();
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+        PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
+    }
+
+    public void save(EbookSaveReq req){
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if (ObjectUtils.isEmpty(req.getId())){
+            // 新增
+            ebookMapper.insert(ebook);
+        }else {
+            // 修改
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 
 }
