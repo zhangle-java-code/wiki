@@ -1078,3 +1078,20 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
 2021-11-27 09:53:58.084 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：1169 ms -------------
 2021-11-27 09:53:58.109 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1257 ms -------------
 2021-11-27 09:53:58.111 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1263 ms -------------
+2021-11-27 09:59:52.663 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-11-27 09:59:52.674 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-11-27 09:59:52.924 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 2940 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-27 09:59:52.925 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-27 09:59:53.731 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-27 09:59:53.733 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-27 09:59:53.733 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-27 09:59:53.734 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-27 09:59:53.783 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-27 09:59:53.783 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 852 ms
+2021-11-27 09:59:54.399 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-27 09:59:54.410 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-27 09:59:54.412 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-27 09:59:54.419 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.578 seconds (JVM running for 1814.051)
+2021-11-27 09:59:54.422 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-27 09:59:54.422 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-27 09:59:54.423 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
