@@ -8,6 +8,7 @@ import com.zh.wiki.mapper.EbookMapper;
 import com.zh.wiki.req.EbookReq;
 import com.zh.wiki.resp.CommonResp;
 import com.zh.wiki.resp.EbookResp;
+import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.util.CopyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +29,7 @@ public class EbookService {
     private EbookMapper ebookMapper;
 
 
-    public List<EbookResp> list(EbookReq req){
+    public PageResp<EbookResp> list(EbookReq req){
         // ! 查询条件固定写法
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
@@ -59,7 +60,10 @@ public class EbookService {
 
         // ! 循环，进行属性赋值
         List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
-        return list;
+        PageResp<EbookResp> pageResp = new PageResp();
+        pageResp.setTotal(pageInfo.getTotal());
+        pageResp.setList(list);
+        return pageResp;
     }
 
 }

@@ -3557,3 +3557,764 @@ Consider defining a bean of type 'com.zh.wiki.service.EbookService' in your conf
 2021-11-23 07:00:21.474 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2021-11-23 07:00:21.475 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
 2021-11-23 07:00:21.476 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:00:43.046 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:00:43.046 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:00:43.774 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:00:43.775 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:00:43.776 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:00:43.776 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:00:43.824 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:00:43.824 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 773 ms
+2021-11-23 07:00:44.484 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:00:44.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:00:44.496 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:00:44.501 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.538 seconds (JVM running for 1377.011)
+2021-11-23 07:00:44.503 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:00:44.504 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:00:44.504 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:02:27.445 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:02:27.445 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:02:28.314 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:02:28.315 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:02:28.316 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:02:28.317 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:02:28.369 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:02:28.369 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 917 ms
+2021-11-23 07:02:29.074 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:02:29.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:02:29.094 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:02:29.101 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.765 seconds (JVM running for 1481.61)
+2021-11-23 07:02:29.103 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:02:29.104 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:02:29.104 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:03:04.403 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:03:04.403 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:03:05.021 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:03:05.022 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:03:05.022 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:03:05.023 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:03:05.055 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:03:05.055 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 643 ms
+2021-11-23 07:03:05.591 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:03:05.606 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:03:05.608 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:03:05.613 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.312 seconds (JVM running for 1518.123)
+2021-11-23 07:03:05.615 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:03:05.615 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:03:05.615 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:05:05.424 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:05:05.424 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:05:06.293 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:05:06.295 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:05:06.295 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:05:06.296 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:05:06.337 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:05:06.337 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 907 ms
+2021-11-23 07:05:07.020 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:05:07.031 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:05:07.033 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:05:07.038 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.695 seconds (JVM running for 1639.548)
+2021-11-23 07:05:07.040 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:05:07.040 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:05:07.040 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:06:04.422 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:06:04.423 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:06:05.080 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:06:05.081 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:06:05.081 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:06:05.081 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:06:05.118 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:06:05.118 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 690 ms
+2021-11-23 07:06:05.249 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5c85d1e6]
+2021-11-23 07:06:05.250 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-23 07:06:05.261 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 07:06:05.277 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5c85d1e6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5c85d1e6]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/zh/wiki/service/EbookService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.EbookService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-11-23 07:07:06.874 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:07:06.874 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:07:07.685 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:07:07.686 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:07:07.687 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:07:07.687 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:07:07.727 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:07:07.727 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 847 ms
+2021-11-23 07:07:07.888 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1a3e66b5]
+2021-11-23 07:07:07.889 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-23 07:07:07.903 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 07:07:07.912 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1a3e66b5]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1a3e66b5]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/req/PageReq
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:160)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:142)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.req.PageReq
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 39 common frames omitted
+2021-11-23 07:08:29.885 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:08:29.885 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:08:30.665 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:08:30.666 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:08:30.666 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:08:30.667 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:08:30.702 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:08:30.703 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 812 ms
+2021-11-23 07:08:30.834 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c7324fc]
+2021-11-23 07:08:30.835 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-23 07:08:30.844 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-23 07:08:30.852 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c7324fc]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c7324fc]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/req/EbookReq
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.req.EbookReq
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 27 common frames omitted
+2021-11-23 07:09:15.700 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:09:15.700 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:09:16.479 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:09:16.480 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:09:16.480 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:09:16.481 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:09:16.553 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:09:16.554 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 849 ms
+2021-11-23 07:09:18.054 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:09:18.070 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:09:18.073 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:09:18.092 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.461 seconds (JVM running for 1890.602)
+2021-11-23 07:09:18.097 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:09:18.114 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:09:18.114 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:11:00.635 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:11:00.636 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:11:01.570 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:11:01.572 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:11:01.572 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:11:01.573 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:11:01.630 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:11:01.630 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 987 ms
+2021-11-23 07:11:02.481 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:11:02.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:11:02.496 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:11:02.502 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.959 seconds (JVM running for 1995.012)
+2021-11-23 07:11:02.505 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:11:02.505 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:11:02.506 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:11:31.668 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:11:31.668 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:11:32.410 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:11:32.411 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:11:32.411 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:11:32.411 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:11:32.467 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:11:32.469 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 797 ms
+2021-11-23 07:11:33.318 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:11:33.363 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:11:33.368 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:11:33.376 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.772 seconds (JVM running for 2025.885)
+2021-11-23 07:11:33.379 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:11:33.379 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:11:33.380 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:12:51.666 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:12:51.667 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:12:52.484 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:12:52.485 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:12:52.486 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:12:52.486 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:12:52.531 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:12:52.531 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 857 ms
+2021-11-23 07:12:53.198 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:12:53.210 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:12:53.211 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:12:53.217 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.64 seconds (JVM running for 2105.727)
+2021-11-23 07:12:53.218 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:12:53.219 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:12:53.219 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-23 07:13:04.584 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 07:13:04.584 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-23 07:13:04.585 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-11-23 07:13:04.586 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:04.586 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:04.587 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:04.587 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:04.588 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:04.588 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:04.597 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:04.597 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:04.597 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:04.597 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:04.599 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"name_3wtut","page":1,"size":10}]
+2021-11-23 07:13:04.609 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-6 - Starting...
+2021-11-23 07:13:04.642 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-6 - Start completed.
+2021-11-23 07:13:04.644 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (`name` LIKE ?)
+2021-11-23 07:13:04.645 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: %name_3wtut%(String)
+2021-11-23 07:13:04.646 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:04.647 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-11-23 07:13:04.648 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:04.648 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:04.649 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:04.653 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-11-23 07:13:04.654 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：57 ms -------------
+2021-11-23 07:13:04.657 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：69 ms -------------
+2021-11-23 07:13:04.658 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：71 ms -------------
+2021-11-23 07:13:10.967 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:10.969 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:10.969 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:10.970 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:10.970 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:10.970 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:10.972 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:10.972 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:10.973 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:10.973 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:10.973 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:10.975 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:10.976 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:10.978 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:10.978 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:10.979 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:10.980 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:10.980 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:10.981 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:10.982 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:10.982 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:10.983 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:10.983 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:10.993 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:10.993 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：21 ms -------------
+2021-11-23 07:13:10.995 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：24 ms -------------
+2021-11-23 07:13:10.995 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：26 ms -------------
+2021-11-23 07:13:12.700 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:12.701 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.701 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.702 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:12.702 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.702 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.703 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:12.703 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.703 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:12.704 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.704 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:12.706 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:12.707 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:12.709 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:12.709 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:12.710 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:12.711 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:12.712 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:12.713 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:12.714 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:12.714 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:12.715 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:12.715 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:12.715 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:12.715 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2021-11-23 07:13:12.717 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2021-11-23 07:13:12.717 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：16 ms -------------
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.882 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.883 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:12.883 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:12.883 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:12.884 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:12.884 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:12.885 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:12.886 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:12.888 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:12.889 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:12.889 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:12.890 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:12.891 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:12.892 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:12.893 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:12.893 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:12.894 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:12.894 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:12.894 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:12.895 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2021-11-23 07:13:12.895 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：12 ms -------------
+2021-11-23 07:13:12.896 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2021-11-23 07:13:13.061 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:13.061 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.061 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.062 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:13.062 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.063 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.064 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:13.064 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.064 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:13.065 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.065 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:13.067 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:13.068 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:13.072 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:13.073 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:13.073 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.074 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:13.075 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:13.077 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:13.077 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:13.078 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.079 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.079 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.080 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:13.080 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：16 ms -------------
+2021-11-23 07:13:13.082 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：19 ms -------------
+2021-11-23 07:13:13.082 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：21 ms -------------
+2021-11-23 07:13:13.488 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:13.488 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.489 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.489 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:13.493 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.493 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.498 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:13.498 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.499 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:13.499 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.500 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:13.501 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:13.502 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:13.522 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:13.523 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:13.524 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.525 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:13.526 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:13.527 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:13.528 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:13.529 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.529 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.530 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.530 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:13.531 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2021-11-23 07:13:13.532 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：35 ms -------------
+2021-11-23 07:13:13.533 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：44 ms -------------
+2021-11-23 07:13:13.662 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:13.662 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.662 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.663 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:13.663 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.663 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.664 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:13.664 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.664 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:13.664 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.664 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:13.665 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:13.666 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:13.667 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:13.668 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:13.669 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.670 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:13.671 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:13.673 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:13.674 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:13.675 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.676 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.677 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.678 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:13.678 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-11-23 07:13:13.679 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：16 ms -------------
+2021-11-23 07:13:13.679 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：17 ms -------------
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.811 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.812 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:13.813 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:13.813 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:13.813 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:13.815 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:13.816 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:13.817 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:13.819 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:13.820 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:13.821 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.822 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:13.823 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:13.824 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:13.824 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:13.825 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:13.826 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.826 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:13.827 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:13.827 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-11-23 07:13:13.829 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：17 ms -------------
+2021-11-23 07:13:13.829 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2021-11-23 07:13:14.123 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:14.124 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.124 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.124 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:14.124 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.125 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.125 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:14.126 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.126 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:14.127 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.127 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:14.129 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:14.130 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:14.133 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:14.134 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:14.135 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:14.136 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:14.137 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:14.140 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:14.141 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:14.142 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:14.143 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:14.143 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:14.144 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:14.144 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2021-11-23 07:13:14.148 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：22 ms -------------
+2021-11-23 07:13:14.149 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：25 ms -------------
+2021-11-23 07:13:14.291 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:13:14.291 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.292 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.292 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:13:14.293 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.293 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.294 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:13:14.294 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:13:14.294 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:13:14.294 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:13:14.295 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:13:14.297 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:13:14.297 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:13:14.300 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:13:14.301 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:13:14.301 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:14.302 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:13:14.302 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:13:14.304 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:13:14.304 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:13:14.305 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:13:14.305 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:14.306 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:13:14.306 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:13:14.306 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2021-11-23 07:13:14.307 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：14 ms -------------
+2021-11-23 07:13:14.308 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：16 ms -------------
+2021-11-23 07:18:45.736 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:18:45.737 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.738 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.738 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:18:45.739 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.739 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.740 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:18:45.740 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.741 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:18:45.741 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.741 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:18:45.743 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:18:45.744 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:18:45.747 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:18:45.747 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:18:45.748 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:18:45.749 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:18:45.750 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:18:45.751 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:18:45.752 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:18:45.752 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:18:45.753 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:18:45.754 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:18:45.754 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:18:45.755 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-11-23 07:18:45.756 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：17 ms -------------
+2021-11-23 07:18:45.756 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2021-11-23 07:18:45.898 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:18:45.899 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.899 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.899 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:18:45.899 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.900 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.900 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:18:45.901 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:18:45.901 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:18:45.902 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-23 07:18:45.902 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"id":1,"name":"","page":1,"size":1}]
+2021-11-23 07:18:45.904 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:18:45.904 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:18:45.908 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:18:45.909 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:18:45.910 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:18:45.910 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:18:45.912 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 1(Integer)
+2021-11-23 07:18:45.913 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:18:45.914 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:18:45.915 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:18:45.915 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:18:45.916 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:18:45.916 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"}],"total":0},"success":true}
+2021-11-23 07:18:45.917 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2021-11-23 07:18:45.918 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：18 ms -------------
+2021-11-23 07:18:45.918 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：19 ms -------------
+2021-11-23 07:30:39.595 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:30:39.598 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.598 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.599 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:30:39.599 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.600 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.601 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:30:39.602 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.602 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:30:39.603 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.603 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2021-11-23 07:30:39.607 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:30:39.608 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:30:39.657 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:30:39.658 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:30:39.659 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:30:39.660 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:30:39.660 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2021-11-23 07:30:39.662 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:30:39.663 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:39.663 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-23 07:30:39.664 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:39.664 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-23 07:30:39.665 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 4
+2021-11-23 07:30:39.666 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:39.666 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:39.667 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"},{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"}],"total":0},"success":true}
+2021-11-23 07:30:39.667 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：66 ms -------------
+2021-11-23 07:30:39.669 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：69 ms -------------
+2021-11-23 07:30:39.670 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：72 ms -------------
+2021-11-23 07:30:39.890 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:30:39.891 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.891 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.892 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:30:39.892 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.893 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.894 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:30:39.895 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:39.895 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:30:39.895 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:39.896 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2021-11-23 07:30:39.898 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:30:39.899 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:30:40.158 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:30:40.159 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:30:40.160 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:30:40.161 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:30:40.162 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2021-11-23 07:30:40.164 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:30:40.164 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:40.168 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-23 07:30:40.169 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:40.170 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-23 07:30:40.170 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 4
+2021-11-23 07:30:40.171 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:40.172 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:40.179 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"},{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"}],"total":0},"success":true}
+2021-11-23 07:30:40.180 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：286 ms -------------
+2021-11-23 07:30:40.184 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：291 ms -------------
+2021-11-23 07:30:40.185 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：293 ms -------------
+2021-11-23 07:30:40.367 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-23 07:30:40.367 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:40.368 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:40.368 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-23 07:30:40.369 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:40.369 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:40.370 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-23 07:30:40.371 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-23 07:30:40.371 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-23 07:30:40.372 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-23 07:30:40.374 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":1,"size":4}]
+2021-11-23 07:30:40.377 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-23 07:30:40.378 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-23 07:30:40.864 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-23 07:30:40.864 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-23 07:30:40.866 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-23 07:30:40.867 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-11-23 07:30:40.868 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 4(Integer)
+2021-11-23 07:30:41.014 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-23 07:30:41.015 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot入门教程, null, null, 零基础入门Java开发, 企业级应
+用开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:41.016 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-23 07:30:41.017 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-23 07:30:41.018 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-23 07:30:41.019 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 4
+2021-11-23 07:30:41.020 WARN  com.zh.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:41.020 INFO  com.zh.wiki.service.EbookService                  :47   [32m                  [0;39m 总行数: 0
+2021-11-23 07:30:41.021 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Java开发, 企业级应\r\n用开发最佳首选框架","id":1,"name":"Spring Boot入门教程"},{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"}],"total":0},"success":true}
+2021-11-23 07:30:41.022 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：652 ms -------------
+2021-11-23 07:30:41.023 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：654 ms -------------
+2021-11-23 07:30:41.024 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：656 ms -------------
+2021-11-23 07:31:09.666 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
+2021-11-23 07:31:09.676 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
+2021-11-23 07:31:10.048 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_311 on DESKTOP-1HKNJP2 with PID 108956 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-23 07:31:10.048 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-23 07:31:11.063 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-23 07:31:11.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:31:11.065 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-23 07:31:11.065 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-23 07:31:11.156 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-23 07:31:11.157 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1101 ms
+2021-11-23 07:31:12.527 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-23 07:31:12.547 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-23 07:31:12.549 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-23 07:31:12.557 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.646 seconds (JVM running for 3205.067)
+2021-11-23 07:31:12.561 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-23 07:31:12.561 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-23 07:31:12.562 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
