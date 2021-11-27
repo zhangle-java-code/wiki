@@ -2360,3 +2360,277 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
 2021-11-27 20:22:08.748 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：42 ms -------------
 2021-11-27 20:22:08.750 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：44 ms -------------
 2021-11-27 20:22:08.750 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：45 ms -------------
+2021-11-27 20:33:33.391 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:33:33.394 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/ GET
+2021-11-27 20:33:33.394 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:33.400 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:33.401 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/ GET
+2021-11-27 20:33:33.401 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:33.401 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2021-11-27 20:33:33.402 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：7 ms -------------
+2021-11-27 20:33:33.403 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:33.404 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/error GET
+2021-11-27 20:33:33.404 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:33.491 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：87 ms -------------
+2021-11-27 20:33:34.503 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:33:34.504 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/favicon.ico GET
+2021-11-27 20:33:34.505 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:34.506 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:34.507 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/favicon.ico GET
+2021-11-27 20:33:34.507 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:34.510 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：3 ms -------------
+2021-11-27 20:33:34.510 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：5 ms -------------
+2021-11-27 20:33:34.512 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:34.512 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/error GET
+2021-11-27 20:33:34.512 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-27 20:33:34.551 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：39 ms -------------
+2021-11-27 20:33:41.598 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:33:41.599 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:33:41.599 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:41.600 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:41.600 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:33:41.600 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:41.602 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:33:41.602 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:33:41.603 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:33:41.603 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:41.603 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:33:41.607 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:33:41.608 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:33:41.730 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:33:41.731 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:33:41.732 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:33:41.733 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:33:41.734 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:33:41.735 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:33:41.736 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:33:41.737 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:33:41.737 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:33:41.738 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:33:41.738 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:33:41.739 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:33:41.740 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:33:41.740 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:33:41.742 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:33:41.742 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：141 ms -------------
+2021-11-27 20:33:41.744 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：143 ms -------------
+2021-11-27 20:33:41.745 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：146 ms -------------
+2021-11-27 20:33:42.878 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:33:42.882 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/favicon.ico GET
+2021-11-27 20:33:42.883 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:42.886 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:42.888 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/favicon.ico GET
+2021-11-27 20:33:42.888 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:42.897 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：8 ms -------------
+2021-11-27 20:33:42.897 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2021-11-27 20:33:42.898 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:33:42.899 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:33:42.899 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:33:42.901 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：2 ms -------------
+2021-11-27 20:35:28.856 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:35:28.857 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:35:28.857 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:28.858 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:35:28.858 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:35:28.858 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:28.859 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:35:28.859 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:35:28.859 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:35:28.860 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:28.860 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:35:28.861 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:35:28.862 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:35:28.868 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:35:28.869 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:35:28.869 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:35:28.869 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:35:28.869 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:35:28.870 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:35:28.870 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:35:28.871 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:35:28.871 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:35:28.872 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:35:28.872 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:35:28.873 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:35:28.873 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:35:28.873 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:35:28.874 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:35:28.874 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-11-27 20:35:28.876 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：18 ms -------------
+2021-11-27 20:35:28.876 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/favicon.ico GET
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/favicon.ico GET
+2021-11-27 20:35:29.076 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:29.077 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1 ms -------------
+2021-11-27 20:35:29.077 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2021-11-27 20:35:29.078 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:35:29.078 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:35:29.078 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:29.079 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：1 ms -------------
+2021-11-27 20:35:58.358 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:35:58.358 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:35:58.358 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:58.359 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:35:58.359 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:35:58.359 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:35:58.384 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：25 ms -------------
+2021-11-27 20:35:58.385 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：27 ms -------------
+2021-11-27 20:36:10.650 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:36:10.650 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:10.651 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:10.651 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:36:10.651 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:10.651 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:10.652 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:36:10.652 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:10.652 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:36:10.652 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:10.653 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:36:10.655 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:36:10.655 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:10.659 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:36:10.659 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:36:10.659 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:36:10.659 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:36:10.660 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:10.663 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:36:10.664 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:36:10.666 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:10.666 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:36:10.667 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:10.667 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:36:10.667 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:36:10.669 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:10.669 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:10.674 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:36:10.674 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：22 ms -------------
+2021-11-27 20:36:10.676 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：25 ms -------------
+2021-11-27 20:36:10.677 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：26 ms -------------
+2021-11-27 20:36:13.779 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:36:13.780 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:13.780 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:13.781 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:36:13.781 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:13.781 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:13.782 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:36:13.782 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:13.782 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:36:13.782 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:13.783 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:36:13.785 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:36:13.785 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:13.789 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:36:13.789 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:36:13.790 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:36:13.790 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:36:13.790 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:13.791 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:36:13.792 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:36:13.792 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:13.792 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:36:13.793 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:13.793 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:36:13.793 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:36:13.794 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:13.794 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:13.795 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:36:13.795 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2021-11-27 20:36:13.797 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：16 ms -------------
+2021-11-27 20:36:13.797 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：17 ms -------------
+2021-11-27 20:36:15.963 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:36:15.964 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:36:15.964 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:15.964 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:36:15.965 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/error GET
+2021-11-27 20:36:15.965 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:15.984 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：19 ms -------------
+2021-11-27 20:36:15.985 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：21 ms -------------
+2021-11-27 20:36:22.976 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:36:22.976 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:22.976 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:22.977 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:36:22.977 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:22.977 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:22.978 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:36:22.978 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:22.978 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:36:22.978 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:22.979 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:36:22.983 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:36:22.983 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:22.985 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:36:22.985 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:36:22.985 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:36:22.985 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:36:22.985 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:22.986 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:36:22.986 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:36:22.987 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:22.987 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:36:22.987 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:22.988 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:36:22.988 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:36:22.988 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:22.988 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:22.989 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:36:22.990 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2021-11-27 20:36:22.991 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：14 ms -------------
+2021-11-27 20:36:22.991 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2021-11-27 20:36:26.374 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-27 20:36:26.374 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:26.375 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:26.375 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-27 20:36:26.375 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:26.376 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:26.378 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-27 20:36:26.378 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/ebook/list GET
+2021-11-27 20:36:26.378 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.EbookController.list
+2021-11-27 20:36:26.379 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-27 20:36:26.379 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2021-11-27 20:36:26.382 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-11-27 20:36:26.382 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:26.386 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-11-27 20:36:26.386 TRACE c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-11-27 20:36:26.387 DEBUG c.zh.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-11-27 20:36:26.387 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2021-11-27 20:36:26.388 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2021-11-27 20:36:26.389 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-11-27 20:36:26.389 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue入门教程, null, null, 零基础入门Vue开发, 企业级应用开发最佳
+首选框架, null, null, null, null
+2021-11-27 20:36:26.390 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python入门教程, null, null, 零基础入门Python开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:26.391 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, Mysql入门教程, null, null, 零基础入门Mysql开发, 企业级应用开发
+最佳首选框架, null, null, null, null
+2021-11-27 20:36:26.391 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle入门教程, null, null, 零基础入门Oracle开发, 企业级应用
+开发最佳首选框架, null, null, null, null
+2021-11-27 20:36:26.392 TRACE com.zh.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 119616672033280000, , 1, 1, , , 1, 1, 1
+2021-11-27 20:36:26.392 DEBUG com.zh.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-11-27 20:36:26.393 WARN  com.zh.wiki.service.EbookService                  :48   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:26.393 INFO  com.zh.wiki.service.EbookService                  :49   [32m                  [0;39m 总行数: 0
+2021-11-27 20:36:26.395 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"description":"零基础入门Vue开发, 企业级应用开发最佳\r\n首选框架","id":2,"name":"Vue入门教程"},{"description":"零基础入门Python开发, 企业级应用\r\n开发最佳首选框架","id":3,"name":"Python入门教程"},{"description":"零基础入门Mysql开发, 企业级应用开发\r\n最佳首选框架","id":4,"name":"Mysql入门教程"},{"description":"零基础入门Oracle开发, 企业级应用\r\n开发最佳首选框架","id":5,"name":"Oracle入门教程"},{"category1Id":1,"category2Id":1,"cover":"","description":"","docCount":1,"id":119616672033280000,"name":"","viewCount":1,"voteCount":1}],"total":0},"success":true}
+2021-11-27 20:36:26.395 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2021-11-27 20:36:26.397 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：21 ms -------------
+2021-11-27 20:36:26.398 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：23 ms -------------
