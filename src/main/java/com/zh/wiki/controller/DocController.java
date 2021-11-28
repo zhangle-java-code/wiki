@@ -9,6 +9,7 @@ import com.zh.wiki.service.DocService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,15 +30,15 @@ public class DocController {
     }
 
     @GetMapping("/list")
-    public CommonResp list(DocQueryReq req) {
+    public CommonResp list(@Valid DocQueryReq req) {
         CommonResp<PageResp<DocQueryResp>> resp = new CommonResp<>();
-        PageResp<DocQueryResp> pageResp = docService.list(req);
-        resp.setContent(pageResp);
+        PageResp<DocQueryResp> list = docService.list(req);
+        resp.setContent(list);
         return resp;
     }
 
     @PostMapping("/save")
-    public CommonResp save(@RequestBody DocSaveReq req) {
+    public CommonResp save(@Valid @RequestBody DocSaveReq req) {
         CommonResp resp = new CommonResp<>();
         docService.save(req);
         return resp;
