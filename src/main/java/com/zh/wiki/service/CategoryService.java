@@ -57,4 +57,8 @@ public class CategoryService {
         }
     }
 
+    public void delete(Long id) {
+        categoryMapper.deleteByPrimaryKey(id);
+    }
+
 }

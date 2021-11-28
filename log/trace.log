@@ -323,3 +323,100 @@ Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.CategoryService
 2021-11-28 11:02:07.993 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
 2021-11-28 11:02:07.994 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
 2021-11-28 11:02:07.994 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2021-11-28 11:04:59.074 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-11-28 11:04:59.078 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-11-28 11:04:59.218 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 36584 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 11:04:59.219 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 11:04:59.519 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 11:04:59.519 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 11:04:59.521 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-11-28 11:04:59.667 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 11:04:59.668 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 11:04:59.668 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 11:04:59.668 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 11:04:59.699 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 11:04:59.699 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 477 ms
+2021-11-28 11:05:00.230 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 11:05:00.238 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 11:05:00.239 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 11:05:00.243 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.089 seconds (JVM running for 9449.537)
+2021-11-28 11:05:00.244 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 11:05:00.244 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 11:05:00.245 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 11:32:14.441 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 36584 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 11:32:14.442 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 11:32:14.732 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 11:32:14.732 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 11:32:14.735 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 11:32:14.910 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 11:32:14.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 11:32:14.911 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 11:32:14.911 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 11:32:14.963 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 11:32:14.963 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 517 ms
+2021-11-28 11:32:15.775 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 11:32:15.787 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 11:32:15.789 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 11:32:15.792 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.425 seconds (JVM running for 11085.086)
+2021-11-28 11:32:15.793 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 11:32:15.794 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 11:32:15.794 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 13:01:43.140 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 36584 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 13:01:43.141 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 13:01:43.611 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 13:01:43.612 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 13:01:43.614 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 13:01:44.082 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 13:01:44.083 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 13:01:44.083 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 13:01:44.084 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 13:01:44.136 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 13:01:44.137 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 991 ms
+2021-11-28 13:01:44.943 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 13:01:44.954 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 13:01:44.955 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 13:01:44.960 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.885 seconds (JVM running for 16454.255)
+2021-11-28 13:01:44.962 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 13:01:44.962 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 13:01:44.963 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 13:02:11.909 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 36584 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 13:02:11.909 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 13:02:12.111 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 13:02:12.111 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 13:02:12.113 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-11-28 13:02:12.231 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 13:02:12.232 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 13:02:12.232 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 13:02:12.232 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 13:02:12.262 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 13:02:12.262 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 350 ms
+2021-11-28 13:02:12.727 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 13:02:12.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 13:02:12.735 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 13:02:12.739 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.868 seconds (JVM running for 16482.033)
+2021-11-28 13:02:12.740 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 13:02:12.740 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 13:02:12.740 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 13:02:49.571 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-28 13:02:49.571 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-28 13:02:49.572 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-11-28 13:02:49.573 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-28 13:02:49.573 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/category/delete/119996074105638912 DELETE
+2021-11-28 13:02:49.574 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 13:02:49.575 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-28 13:02:49.575 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/category/delete/119996074105638912 DELETE
+2021-11-28 13:02:49.575 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 13:02:49.578 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-28 13:02:49.578 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/category/delete/119996074105638912 DELETE
+2021-11-28 13:02:49.578 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.CategoryController.delete
+2021-11-28 13:02:49.579 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 13:02:49.580 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: [119996074105638912]
+2021-11-28 13:02:49.582 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2021-11-28 13:02:49.604 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2021-11-28 13:02:49.604 DEBUG c.zh.wiki.mapper.CategoryMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2021-11-28 13:02:49.604 DEBUG c.zh.wiki.mapper.CategoryMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 119996074105638912(Long)
+2021-11-28 13:02:49.620 DEBUG c.zh.wiki.mapper.CategoryMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 1
+2021-11-28 13:02:49.621 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"success":true}
+2021-11-28 13:02:49.621 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：43 ms -------------
+2021-11-28 13:02:49.622 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：47 ms -------------
+2021-11-28 13:02:49.622 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：48 ms -------------
