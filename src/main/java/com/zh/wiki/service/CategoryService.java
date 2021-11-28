@@ -27,9 +27,19 @@ public class CategoryService {
     @Resource
     private CategoryMapper  categoryMapper;
 
+    public List<CategoryQueryResp> all() {
+        CategoryExample categoryExample = new CategoryExample();
+        categoryExample.setOrderByClause("sort asc");
+        List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
+        // categoryList 查询结果是Category类型，需要转换成CategoryQueryResp类型
+        List<CategoryQueryResp> list =  CopyUtil.copyList(categoryList, CategoryQueryResp.class);
+        return list;
+    }
+
     public PageResp<CategoryQueryResp> list(CategoryQueryReq req) {
 
         CategoryExample categoryExample = new CategoryExample();
+        categoryExample.setOrderByClause("sort asc");
         CategoryExample.Criteria criteria = categoryExample.createCriteria();
 
         PageHelper.startPage(req.getPage(), req.getSize());
