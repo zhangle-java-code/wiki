@@ -1812,3 +1812,452 @@ Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
 2021-11-28 18:52:00.276 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2021-11-28 18:52:00.276 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
 2021-11-28 18:52:00.277 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 18:58:49.211 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 18:58:49.211 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 18:58:49.512 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 18:58:49.512 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 18:58:49.514 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 18:58:49.673 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 18:58:49.673 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 18:58:49.674 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 18:58:49.674 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 18:58:49.708 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 18:58:49.709 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 494 ms
+2021-11-28 18:58:50.266 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 18:58:50.276 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 18:58:50.277 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 18:58:50.282 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.126 seconds (JVM running for 2877.882)
+2021-11-28 18:58:50.283 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 18:58:50.284 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 18:58:50.284 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 18:59:28.366 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 18:59:28.367 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 18:59:28.610 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 18:59:28.610 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 18:59:28.612 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 18:59:28.733 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 18:59:28.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 18:59:28.734 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 18:59:28.734 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 18:59:28.766 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 18:59:28.766 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 397 ms
+2021-11-28 18:59:28.869 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@23d64c18]
+2021-11-28 18:59:28.869 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-28 18:59:28.873 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-28 18:59:28.877 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@23d64c18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@23d64c18]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/service/DocService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3220)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2341)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 common frames omitted
+2021-11-28 19:01:15.259 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:01:15.259 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:01:15.625 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:01:15.625 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:01:15.628 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:01:15.815 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:01:15.815 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:01:15.815 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:01:15.816 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:01:15.859 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:01:15.859 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 596 ms
+2021-11-28 19:01:16.010 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a5d5fa1]
+2021-11-28 19:01:16.011 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-28 19:01:16.017 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-28 19:01:16.023 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a5d5fa1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2a5d5fa1]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/service/DocService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3220)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2341)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 common frames omitted
+2021-11-28 19:03:35.030 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:03:35.031 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:03:35.345 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:03:35.345 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:03:35.347 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:03:35.515 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:03:35.516 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:03:35.516 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:03:35.516 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:03:35.560 INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:03:35.560 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 526 ms
+2021-11-28 19:03:35.698 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@12bfce97]
+2021-11-28 19:03:35.699 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-28 19:03:35.703 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-28 19:03:35.708 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@12bfce97]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@12bfce97]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/service/DocService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3220)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2341)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 common frames omitted
+2021-11-28 19:04:10.669 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:04:10.669 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:04:10.979 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:04:10.979 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:04:10.982 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:04:11.140 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:04:11.141 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:04:11.141 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:04:11.141 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:04:11.187 INFO  o.a.c.c.ContainerBase.[Tomcat-5].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:04:11.188 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 515 ms
+2021-11-28 19:04:11.372 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@52de8398]
+2021-11-28 19:04:11.372 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-28 19:04:11.380 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-28 19:04:11.387 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@52de8398]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@52de8398]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/service/DocService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3220)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2341)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 common frames omitted
+2021-11-28 19:05:04.839 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:05:04.840 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:05:05.174 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:05:05.174 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:05:05.176 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:05:05.390 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:05:05.391 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:05:05.391 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:05:05.391 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:05:05.450 INFO  o.a.c.c.ContainerBase.[Tomcat-6].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:05:05.450 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 606 ms
+2021-11-28 19:05:06.184 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:05:06.194 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:05:06.196 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:05:06.200 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.422 seconds (JVM running for 3253.8)
+2021-11-28 19:05:06.201 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:05:06.202 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:05:06.202 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:06:11.642 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:06:11.642 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:06:11.871 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:06:11.872 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:06:11.874 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:06:11.985 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:06:11.985 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:06:11.985 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:06:11.985 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:06:12.019 INFO  o.a.c.c.ContainerBase.[Tomcat-6].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:06:12.019 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 374 ms
+2021-11-28 19:06:12.130 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@a4e006a]
+2021-11-28 19:06:12.130 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-11-28 19:06:12.134 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-28 19:06:12.138 ERROR org.springframework.boot.SpringApplication        :843  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\com\zh\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@a4e006a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at com.zh.wiki.config.WikiApplication.main(WikiApplication.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.zh.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@a4e006a]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/zh/wiki/service/DocService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3220)
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2341)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:606)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:468)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 common frames omitted
+2021-11-28 19:13:34.444 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:13:34.445 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:13:35.087 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:13:35.087 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:13:35.098 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:13:35.386 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:13:35.387 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:13:35.388 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:13:35.388 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:13:35.449 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:13:35.450 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 998 ms
+2021-11-28 19:13:36.961 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:13:36.985 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:13:36.987 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:13:36.995 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.649 seconds (JVM running for 3764.594)
+2021-11-28 19:13:36.997 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:13:36.998 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:13:36.998 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:13:39.040 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:13:39.040 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:13:39.670 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:13:39.670 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:13:39.674 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:13:39.873 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:13:39.874 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:13:39.874 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:13:39.875 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:13:39.929 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:13:39.929 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 882 ms
+2021-11-28 19:13:41.115 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:13:41.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:13:41.132 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:13:41.138 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.207 seconds (JVM running for 3768.738)
+2021-11-28 19:13:41.140 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:13:41.140 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:13:41.141 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:18:59.616 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:18:59.616 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:19:00.737 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:19:00.738 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:19:00.742 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:19:01.030 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:19:01.031 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:19:01.031 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:19:01.032 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:19:01.197 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:19:01.198 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1576 ms
+2021-11-28 19:19:03.025 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:19:03.045 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:19:03.048 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:19:03.055 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 3.536 seconds (JVM running for 4090.655)
+2021-11-28 19:19:03.057 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:19:03.058 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:19:03.058 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:19:25.332 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:19:25.332 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:19:25.728 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:19:25.728 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:19:25.733 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:19:25.966 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:19:25.967 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:19:25.968 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:19:25.968 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:19:26.020 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:19:26.020 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 684 ms
+2021-11-28 19:19:26.801 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:19:26.812 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:19:26.815 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:19:26.819 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.548 seconds (JVM running for 4114.419)
+2021-11-28 19:19:26.821 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:19:26.821 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:19:26.822 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:25:43.543 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:25:43.543 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:25:44.113 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:25:44.114 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:25:44.119 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:25:44.441 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:25:44.442 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:25:44.442 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:25:44.442 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:25:44.510 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:25:44.510 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 961 ms
+2021-11-28 19:25:45.790 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:25:45.812 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:25:45.815 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:25:45.823 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.378 seconds (JVM running for 4493.424)
+2021-11-28 19:25:45.826 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:25:45.827 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:25:45.827 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 19:29:48.078 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 45364 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-11-28 19:29:48.079 INFO  com.zh.wiki.config.WikiApplication                :659  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-11-28 19:29:48.467 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-28 19:29:48.468 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-28 19:29:48.471 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m                  [0;39m Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+2021-11-28 19:29:48.629 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-11-28 19:29:48.630 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:29:48.631 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-11-28 19:29:48.631 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-28 19:29:48.667 INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-11-28 19:29:48.667 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 585 ms
+2021-11-28 19:29:49.331 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-11-28 19:29:49.340 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-11-28 19:29:49.342 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-28 19:29:49.346 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.336 seconds (JVM running for 4736.946)
+2021-11-28 19:29:49.347 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-11-28 19:29:49.347 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
+2021-11-28 19:29:49.348 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
