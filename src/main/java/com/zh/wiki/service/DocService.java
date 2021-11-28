@@ -2,8 +2,11 @@ package com.zh.wiki.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.zh.wiki.domain.Content;
 import com.zh.wiki.domain.Doc;
 import com.zh.wiki.domain.DocExample;
+import com.zh.wiki.mapper.CategoryMapper;
+import com.zh.wiki.mapper.ContentMapper;
 import com.zh.wiki.mapper.DocMapper;
 import com.zh.wiki.req.DocQueryReq;
 import com.zh.wiki.req.DocSaveReq;
@@ -25,6 +28,9 @@ public class DocService {
 
     @Resource
     private SnowFlake snowFlake;
+
+    @Resource
+    private ContentMapper contentMapper;
 
     public List<DocQueryResp> all(){
         DocExample docExample = new DocExample();
@@ -57,11 +63,20 @@ public class DocService {
 
     public void save(DocSaveReq req){
         Doc doc =  CopyUtil.copy(req,Doc.class);
+        Content content = CopyUtil.copy(req,Content.class);
         if(ObjectUtils.isEmpty(req.getId())){
+
             doc.setId(snowFlake.nextId());
             docMapper.insert(doc);
+
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         }else{
             docMapper.updateByPrimaryKey(doc);
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (count ==0 ){
+                contentMapper.insert(content);
+            }
         }
     }
 
