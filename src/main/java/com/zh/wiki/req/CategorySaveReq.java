@@ -2,7 +2,7 @@ package com.zh.wiki.req;
 
 import javax.validation.constraints.NotNull;
 
-public class CategorySaveReq extends PageReq {
+public class CategorySaveReq{
     private Long id;
 
     private Long parent;

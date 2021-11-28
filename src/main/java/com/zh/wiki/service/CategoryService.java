@@ -6,16 +6,23 @@ import com.zh.wiki.domain.Category;
 import com.zh.wiki.domain.CategoryExample;
 import com.zh.wiki.mapper.CategoryMapper;
 import com.zh.wiki.req.CategoryQueryReq;
+import com.zh.wiki.req.CategorySaveReq;
+import com.zh.wiki.req.EbookSaveReq;
 import com.zh.wiki.resp.CategoryQueryResp;
 import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.util.CopyUtil;
+import com.zh.wiki.util.SnowFlake;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class CategoryService {
+
+    @Resource
+    SnowFlake snowFlake;
 
     @Resource
     private CategoryMapper  categoryMapper;
@@ -38,6 +45,16 @@ public class CategoryService {
         pageResp.setList(list);
 
         return pageResp;
+    }
+
+    public void save(CategorySaveReq req) {
+        Category category = CopyUtil.copy(req, Category.class);
+        if (ObjectUtils.isEmpty(req.getId())) {
+            category.setId(snowFlake.nextId());
+            categoryMapper.insert(category);
+        }else{
+            categoryMapper.updateByPrimaryKey(category);
+        }
     }
 
 }
