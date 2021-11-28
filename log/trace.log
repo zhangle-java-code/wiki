@@ -850,3 +850,45 @@ Caused by: java.lang.ClassNotFoundException: com.zh.wiki.req.EbookQueryReq
 2021-11-28 14:43:47.293 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2021-11-28 14:43:47.293 INFO  com.zh.wiki.config.WikiApplication                :25   [32m                  [0;39m 启动成功！！
 2021-11-28 14:43:47.293 INFO  com.zh.wiki.config.WikiApplication                :26   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-11-28 16:38:36.512 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-28 16:38:36.514 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-11-28 16:38:36.518 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 4 ms
+2021-11-28 16:38:36.524 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-28 16:38:36.525 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://localhost:8080/category/all GET
+2021-11-28 16:38:36.527 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-28 16:38:36.535 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-28 16:38:36.536 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://localhost:8080/category/all GET
+2021-11-28 16:38:36.537 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-28 16:38:36.547 WARN  com.zh.wiki.aspect.LogAspect                      :49   [32m                  [0;39m ------------- 开始 aspect -------------
+2021-11-28 16:38:36.548 INFO  com.zh.wiki.aspect.LogAspect                      :50   [32m                  [0;39m 请求地址: http://localhost:8080/category/all GET
+2021-11-28 16:38:36.550 INFO  com.zh.wiki.aspect.LogAspect                      :51   [32m                  [0;39m 类名方法: com.zh.wiki.controller.CategoryController.all
+2021-11-28 16:38:36.550 INFO  com.zh.wiki.aspect.LogAspect                      :52   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2021-11-28 16:38:36.554 INFO  com.zh.wiki.aspect.LogAspect                      :74   [32m                  [0;39m 请求参数: []
+2021-11-28 16:38:36.614 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2021-11-28 16:38:36.804 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2021-11-28 16:38:36.805 DEBUG com.zh.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-11-28 16:38:36.807 DEBUG com.zh.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-11-28 16:38:36.809 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-11-28 16:38:36.810 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-11-28 16:38:36.811 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-11-28 16:38:36.812 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, Vue, 102
+2021-11-28 16:38:36.813 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Vue, 200
+2021-11-28 16:38:36.815 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, Vue, 201
+2021-11-28 16:38:36.816 TRACE com.zh.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, Vue, 202
+2021-11-28 16:38:36.817 DEBUG com.zh.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 6
+2021-11-28 16:38:36.980 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","page":0,"parent":0,"size":0,"sort":100},{"id":101,"name":"Vue","page":0,"parent":100,"size":0,"sort":101},{"id":102,"name":"Vue","page":0,"parent":100,"size":0,"sort":102},{"id":200,"name":"Vue","page":0,"parent":0,"size":0,"sort":200},{"id":201,"name":"Vue","page":0,"parent":200,"size":0,"sort":201},{"id":202,"name":"Vue","page":0,"parent":200,"size":0,"sort":202}],"success":true}
+2021-11-28 16:38:36.981 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：436 ms -------------
+2021-11-28 16:38:36.993 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：456 ms -------------
+2021-11-28 16:38:36.995 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：460 ms -------------
+2021-11-28 16:38:37.895 INFO  com.zh.wiki.filter.LogFilter                      :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-11-28 16:38:37.896 INFO  com.zh.wiki.filter.LogFilter                      :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/ GET
+2021-11-28 16:38:37.896 INFO  com.zh.wiki.filter.LogFilter                      :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 16:38:37.903 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-28 16:38:37.903 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/ GET
+2021-11-28 16:38:37.904 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 16:38:37.904 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2021-11-28 16:38:37.904 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：8 ms -------------
+2021-11-28 16:38:37.919 INFO  com.zh.wiki.interceptor.LogInterceptor            :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-11-28 16:38:37.919 INFO  com.zh.wiki.interceptor.LogInterceptor            :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8080/error GET
+2021-11-28 16:38:37.919 INFO  com.zh.wiki.interceptor.LogInterceptor            :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-11-28 16:38:38.030 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：110 ms -------------
