@@ -2387,3 +2387,4 @@ Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
 2021-11-28 19:58:21.386 INFO  com.zh.wiki.aspect.LogAspect                      :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0}],"total":0},"success":true}
 2021-11-28 19:58:21.386 INFO  com.zh.wiki.aspect.LogAspect                      :88   [32m                  [0;39m ------------- 结束 耗时：66 ms -------------
 2021-11-28 19:58:21.391 INFO  com.zh.wiki.interceptor.LogInterceptor            :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：158 ms -------------
+2021-11-28 19:58:21.391 INFO  com.zh.wiki.filter.LogFilter                      :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：158 ms -------------
