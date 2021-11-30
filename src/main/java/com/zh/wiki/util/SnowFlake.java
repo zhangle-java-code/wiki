@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
 
-
 /**
  * Twitter的分布式自增ID雪花算法
  **/
