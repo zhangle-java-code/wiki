@@ -33,7 +33,8 @@ build/
 ### VS Code ###
 log/*
 /log/*
-log
+log/error.log
+log/trace.log
 logs
 .vscode/
 /logs/
