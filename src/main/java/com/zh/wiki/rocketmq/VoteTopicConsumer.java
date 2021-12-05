@@ -1,4 +1,4 @@
-package com.zh.wiki.rocketmq;// package com.jiawa.wiki.rocketmq;
+package com.zh.wiki.rocketmq;
 //
 // import com.jiawa.wiki.websocket.WebSocketServer;
 // import org.apache.rocketmq.common.message.MessageExt;

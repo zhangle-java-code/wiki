@@ -10,10 +10,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-// @ComponentScan({"com.jiawa", "com.test"})
-@ComponentScan("com.jiawa")
+// @ComponentScan({"com.zh", "com.test"})
+@ComponentScan("com.zh")
 @SpringBootApplication
-@MapperScan("com.jiawa.wiki.mapper")
+@MapperScan("com.zh.wiki.mapper")
 @EnableScheduling
 @EnableAsync
 public class WikiApplication {
