@@ -19,6 +19,7 @@ import com.zh.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+//?
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 
@@ -97,9 +98,11 @@ public class UserService {
     }
 
     public User selectByLoginName(String LoginName) {
+
         UserExample userExample = new UserExample();
         UserExample.Criteria criteria = userExample.createCriteria();
         criteria.andLoginNameEqualTo(LoginName);
+
         List<User> userList = userMapper.selectByExample(userExample);
         if (CollectionUtils.isEmpty(userList)) {
             return null;
@@ -126,6 +129,7 @@ public class UserService {
             LOG.info("用户名不存在, {}", req.getLoginName());
             throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
         } else {
+            //? 判断是否相等
             if (userDb.getPassword().equals(req.getPassword())) {
                 // 登录成功
                 UserLoginResp userLoginResp = CopyUtil.copy(userDb, UserLoginResp.class);
