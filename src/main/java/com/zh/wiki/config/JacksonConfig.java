@@ -13,6 +13,7 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
  * 关联视频课程《Spring Boot + Vue3 前后端分离 实战wiki知识库系统》
  * https://coding.imooc.com/class/474.html
  */
+// TODO: 前后端交互Long类型精度丢失的问题, 看视频解决一下
 @Configuration
 public class JacksonConfig {
     @Bean

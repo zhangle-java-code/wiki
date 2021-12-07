@@ -18,6 +18,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     ActionInterceptor actionInterceptor;
 
     public void addInterceptors(InterceptorRegistry registry) {
+        //!拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
         registry.addInterceptor(loginInterceptor)
                 .addPathPatterns("/**")
                 .excludePathPatterns(
@@ -32,6 +33,8 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                         "/ebook-snapshot/**"
                 );
 
+
+        //! 拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
         registry.addInterceptor(actionInterceptor)
                 .addPathPatterns(
                         "/*/save",
