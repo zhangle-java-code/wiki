@@ -29,7 +29,7 @@ public class ActionInterceptor implements HandlerInterceptor {
         if("OPTIONS".equals(request.getMethod().toUpperCase())){
             return true;
         }
-
+        // 权限验证
         UserLoginResp userLoginResp = LoginUserContext.getUser();
         if ("admin".equals(userLoginResp.getLoginName())) {
             // admin用户不拦截

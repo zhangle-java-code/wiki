@@ -26,6 +26,7 @@ package com.zh.wiki.filter;
          LOG.info("请求地址: {} {}", request.getRequestURL().toString(), request.getMethod());
          LOG.info("远程地址: {}", request.getRemoteAddr());
 
+         // !时间
          long startTime = System.currentTimeMillis();
          filterChain.doFilter(servletRequest, servletResponse);
          LOG.info("------------- LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
