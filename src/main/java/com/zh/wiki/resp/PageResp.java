@@ -3,16 +3,15 @@ package com.zh.wiki.resp;
 import java.util.List;
 
 public class PageResp<T> {
-
-    private Long total;
+    private long total;
 
     private List<T> list;
 
-    public Long getTotal() {
+    public long getTotal() {
         return total;
     }
 
-    public void setTotal(Long total) {
+    public void setTotal(long total) {
         this.total = total;
     }
 
@@ -26,9 +25,10 @@ public class PageResp<T> {
 
     @Override
     public String toString() {
-        return "PageResp{" +
-                "total=" + total +
-                ", list=" + list +
-                '}';
+        final StringBuffer sb = new StringBuffer("PageResp{");
+        sb.append("total=").append(total);
+        sb.append(", list=").append(list);
+        sb.append('}');
+        return sb.toString();
     }
 }

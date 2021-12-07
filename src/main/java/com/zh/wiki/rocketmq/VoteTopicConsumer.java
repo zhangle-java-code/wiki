@@ -1,6 +1,6 @@
 package com.zh.wiki.rocketmq;
 //
-// import com.jiawa.wiki.websocket.WebSocketServer;
+// import com.zh.wiki.websocket.WebSocketServer;
 // import org.apache.rocketmq.common.message.MessageExt;
 // import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 // import org.apache.rocketmq.spring.core.RocketMQListener;

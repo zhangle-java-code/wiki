@@ -13,8 +13,7 @@ public class TestService {
     @Resource
     private TestMapper testMapper;
 
-    public List<Test> list(){
+    public List<Test> list() {
         return testMapper.list();
     }
-
 }

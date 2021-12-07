@@ -30,63 +30,58 @@ public class EbookService {
     @Resource
     private SnowFlake snowFlake;
 
-
-    public PageResp<EbookQueryResp> list(EbookQueryReq req){
-        // ! 查询条件固定写法
+    public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
-
-
-        if (!ObjectUtils.isEmpty(req.getName())){
+        if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
         }
-
-        if (!ObjectUtils.isEmpty(req.getCategoryId2())){
+        if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
             criteria.andCategory2IdEqualTo(req.getCategoryId2());
         }
-
-        // ! 查询条件固定写法
-        PageHelper.startPage(req.getPage(),req.getSize());
+        PageHelper.startPage(req.getPage(), req.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
-        //! 查询总页数
-        PageInfo<Ebook> pageInfo = new PageInfo<>();
-        LOG.warn("总行数: {}", pageInfo.getTotal());
-        LOG.info("总行数: {}", pageInfo.getPages());
 
-        //List<EbookResp> respList = new ArrayList<>();
- //       for (Ebook ebook : ebooksList) {
- ///*           EbookResp ebookResp = new EbookResp();
- //           //ebookResp.setId(ebook.getId());
- //           //! 拷贝属性,讲一个对象属性copy另一个属性
- //           BeanUtils.copyProperties(ebook,ebookResp);*/
- //           // 功能函数复制
- //           //EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
- //           respList.add(ebookResp);
- //       }
- //       return respList;
+        PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+        LOG.info("总行数：{}", pageInfo.getTotal());
+        LOG.info("总页数：{}", pageInfo.getPages());
 
-        // ! 循环，进行属性赋值
+        // List<EbookResp> respList = new ArrayList<>();
+        // for (Ebook ebook : ebookList) {
+        //     // EbookResp ebookResp = new EbookResp();
+        //     // BeanUtils.copyProperties(ebook, ebookResp);
+        //     // 对象复制
+        //     EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+        //
+        //     respList.add(ebookResp);
+        // }
+
+        // 列表复制
         List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+
         PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
+
         return pageResp;
     }
 
-    public void save(EbookSaveReq req){
+    /**
+     * 保存
+     */
+    public void save(EbookSaveReq req) {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
-        if (ObjectUtils.isEmpty(req.getId())){
+        if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
             ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
-        }else {
-            // 修改
+        } else {
+            // 更新
             ebookMapper.updateByPrimaryKey(ebook);
         }
     }
-    //
-    public void delete(Long id){
+
+    public void delete(Long id) {
         ebookMapper.deleteByPrimaryKey(id);
     }
-
 }

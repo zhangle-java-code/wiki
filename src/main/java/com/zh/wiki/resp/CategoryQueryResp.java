@@ -1,10 +1,6 @@
 package com.zh.wiki.resp;
 
-import com.zh.wiki.req.PageReq;
-
-import javax.validation.constraints.NotNull;
-
-public class CategoryQueryResp extends PageReq {
+public class CategoryQueryResp {
     private Long id;
 
     private Long parent;
