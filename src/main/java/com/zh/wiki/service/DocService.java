@@ -18,6 +18,7 @@ import com.zh.wiki.util.CopyUtil;
 import com.zh.wiki.util.RedisUtil;
 import com.zh.wiki.util.RequestContext;
 import com.zh.wiki.util.SnowFlake;
+import com.zh.wiki.websocket.WebSocketServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -49,7 +50,7 @@ public class DocService {
     public RedisUtil redisUtil;
 
     @Resource
-    public com.zh.wiki.service.WsService wsService;
+    public WsService wsService;
 
     // @Resource
     // private RocketMQTemplate rocketMQTemplate;

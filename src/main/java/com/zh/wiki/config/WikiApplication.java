@@ -15,7 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @MapperScan("com.zh.wiki.mapper")
 // TODO 定时任务
-//@EnableScheduling
+@EnableScheduling
 @EnableAsync
 public class WikiApplication {
 
