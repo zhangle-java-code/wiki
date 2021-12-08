@@ -128,3 +128,283 @@
 2021-12-09 05:13:27.177 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:25
 2021-12-09 05:13:29.188 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:27
 2021-12-09 05:13:31.191 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:29
+2021-12-09 05:13:33.194 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:31
+2021-12-09 05:13:35.206 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:33
+2021-12-09 05:13:37.215 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:35
+2021-12-09 05:13:39.222 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:37
+2021-12-09 05:13:41.224 INFO  com.zh.wiki.job.TestJob                           :24   [32m123894645326483456[0;39m 每隔5秒钟执行一次： 13:39
+2021-12-09 05:13:41.633 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-12-09 05:13:41.637 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:13:41.638 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123894645326483456[0;39m Unexpected error occurred in scheduled task
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at com.zh.wiki.job.TestJob.simple(TestJob.java:23)
+	at jdk.internal.reflect.GeneratedMethodAccessor66.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-12-09 05:13:41.640 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-12-09 05:13:41.655 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-12-09 05:13:41.992 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 54468 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-12-09 05:13:41.993 INFO  com.zh.wiki.config.WikiApplication                :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-09 05:13:42.924 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 05:13:42.925 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-09 05:13:42.931 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-12-09 05:13:43.373 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-12-09 05:13:43.375 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:13:43.375 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-09 05:13:43.376 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 05:13:43.456 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-09 05:13:43.456 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1452 ms
+2021-12-09 05:13:44.593 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:13:44.644 WARN  com.zh.wiki.aspect.LogAspect                      :18   [32m                  [0;39m 跨域配置----------------》》》》》
+2021-12-09 05:13:45.173 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-12-09 05:13:45.220 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-09 05:13:45.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:13:45.247 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-09 05:13:45.253 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 3.412 seconds (JVM running for 102.706)
+2021-12-09 05:13:45.255 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-12-09 05:13:45.256 INFO  com.zh.wiki.config.WikiApplication                :27   [32m                  [0;39m 启动成功！！
+2021-12-09 05:13:45.257 INFO  com.zh.wiki.config.WikiApplication                :28   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-12-09 05:14:00.016 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123894874834604032[0;39m 生成今日电子书快照开始
+2021-12-09 05:14:00.016 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m123894874834604032[0;39m HikariPool-2 - Starting...
+2021-12-09 05:14:00.052 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m123894874834604032[0;39m HikariPool-2 - Start completed.
+2021-12-09 05:14:00.053 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123894874834604032[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 05:14:00.054 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123894874834604032[0;39m ==> Parameters: 
+2021-12-09 05:14:00.123 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123894874834604032[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy90.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy141.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy128.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 05:14:05.002 INFO  com.zh.wiki.job.DocJob                            :31   [32m123894895747403776[0;39m 更新电子书下的文档数据开始
+2021-12-09 05:14:05.005 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123894895747403776[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 05:14:05.005 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123894895747403776[0;39m ==> Parameters: 
+2021-12-09 05:14:05.007 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123894895747403776[0;39m <==    Updates: 0
+2021-12-09 05:14:05.008 INFO  com.zh.wiki.job.DocJob                            :34   [32m123894895747403776[0;39m 更新电子书下的文档数据结束，耗时：6毫秒
+2021-12-09 05:14:35.008 INFO  com.zh.wiki.job.DocJob                            :31   [32m123895021601689600[0;39m 更新电子书下的文档数据开始
+2021-12-09 05:14:35.008 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895021601689600[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 05:14:35.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895021601689600[0;39m ==> Parameters: 
+2021-12-09 05:14:35.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895021601689600[0;39m <==    Updates: 0
+2021-12-09 05:14:35.010 INFO  com.zh.wiki.job.DocJob                            :34   [32m123895021601689600[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 05:15:00.007 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123895126455095296[0;39m 生成今日电子书快照开始
+2021-12-09 05:15:00.011 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123895126455095296[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 05:15:00.013 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123895126455095296[0;39m ==> Parameters: 
+2021-12-09 05:15:00.019 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123895126455095296[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy90.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy141.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy128.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 05:15:05.013 INFO  com.zh.wiki.job.DocJob                            :31   [32m123895147451781120[0;39m 更新电子书下的文档数据开始
+2021-12-09 05:15:05.013 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895147451781120[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 05:15:05.013 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895147451781120[0;39m ==> Parameters: 
+2021-12-09 05:15:05.015 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123895147451781120[0;39m <==    Updates: 0
+2021-12-09 05:15:05.015 INFO  com.zh.wiki.job.DocJob                            :34   [32m123895147451781120[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 05:15:24.267 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-12-09 05:15:24.269 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:15:24.271 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-12-09 05:15:24.277 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-12-09 05:15:24.531 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 54468 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-12-09 05:15:24.532 INFO  com.zh.wiki.config.WikiApplication                :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-09 05:15:25.554 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 05:15:25.558 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-09 05:15:25.576 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2021-12-09 05:15:26.088 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-12-09 05:15:26.090 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:15:26.091 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-09 05:15:26.091 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 05:15:26.179 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-09 05:15:26.179 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1638 ms
+2021-12-09 05:15:26.931 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:15:26.964 WARN  com.zh.wiki.aspect.LogAspect                      :18   [32m                  [0;39m 跨域配置----------------》》》》》
+2021-12-09 05:15:27.534 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-12-09 05:15:27.614 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-09 05:15:27.644 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:15:27.651 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-09 05:15:27.658 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 3.254 seconds (JVM running for 205.11)
+2021-12-09 05:15:27.660 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-12-09 05:15:27.661 INFO  com.zh.wiki.config.WikiApplication                :27   [32m                  [0;39m 启动成功！！
+2021-12-09 05:15:27.662 INFO  com.zh.wiki.config.WikiApplication                :28   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-12-09 05:15:29.444 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-12-09 05:15:29.444 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:15:29.606 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 54468 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-12-09 05:15:29.607 INFO  com.zh.wiki.config.WikiApplication                :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-09 05:15:30.213 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 05:15:30.214 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-09 05:15:30.220 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-12-09 05:15:30.607 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-12-09 05:15:30.609 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:15:30.609 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-09 05:15:30.610 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 05:15:30.680 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-09 05:15:30.680 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1069 ms
+2021-12-09 05:15:31.397 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 05:15:31.425 WARN  com.zh.wiki.aspect.LogAspect                      :18   [32m                  [0;39m 跨域配置----------------》》》》》
+2021-12-09 05:15:31.773 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-09 05:15:31.788 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-12-09 05:15:31.793 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-09 05:15:31.799 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.259 seconds (JVM running for 209.251)
+2021-12-09 05:15:31.806 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :58   [32m                  [0;39m Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-12-09 05:15:31.806 INFO  com.zh.wiki.config.WikiApplication                :28   [32m                  [0;39m 启动成功！！
