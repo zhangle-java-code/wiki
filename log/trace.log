@@ -4962,3 +4962,776 @@ Caused by: java.lang.ClassNotFoundException: com.zh.wiki.service.DocService
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
 	... 29 common frames omitted
+2021-12-09 06:16:33.478 INFO  com.zh.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication using Java 15.0.2 on DESKTOP-1HKNJP2 with PID 54780 (C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes started by zhangle in C:\zhangle\codespace\space_java\sprinboot_wiki\wiki)
+2021-12-09 06:16:33.479 INFO  com.zh.wiki.config.WikiApplication                :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-12-09 06:16:34.117 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 06:16:34.118 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-12-09 06:16:34.122 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2021-12-09 06:16:34.446 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2021-12-09 06:16:34.447 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-09 06:16:34.447 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-12-09 06:16:34.448 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-09 06:16:34.519 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-12-09 06:16:34.519 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1031 ms
+2021-12-09 06:16:35.272 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-09 06:16:35.307 WARN  com.zh.wiki.aspect.LogAspect                      :18   [32m                  [0;39m 跨域配置----------------》》》》》
+2021-12-09 06:16:35.623 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-12-09 06:16:35.673 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-12-09 06:16:35.688 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2021-12-09 06:16:35.692 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-09 06:16:35.697 INFO  com.zh.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.348 seconds (JVM running for 3639.965)
+2021-12-09 06:16:35.700 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-12-09 06:16:35.700 INFO  com.zh.wiki.config.WikiApplication                :28   [32m                  [0;39m 启动成功！！
+2021-12-09 06:16:35.700 INFO  com.zh.wiki.config.WikiApplication                :29   [32m                  [0;39m 地址: 	http://127.0.0.1:8080
+2021-12-09 06:17:00.008 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123910729265975296[0;39m 生成今日电子书快照开始
+2021-12-09 06:17:00.010 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m123910729265975296[0;39m HikariPool-2 - Starting...
+2021-12-09 06:17:00.064 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m123910729265975296[0;39m HikariPool-2 - Start completed.
+2021-12-09 06:17:00.065 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123910729265975296[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:17:00.065 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123910729265975296[0;39m ==> Parameters: 
+2021-12-09 06:17:00.068 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123910729265975296[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:17:05.008 INFO  com.zh.wiki.job.DocJob                            :31   [32m123910750241689600[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:17:05.011 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910750241689600[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:17:05.011 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910750241689600[0;39m ==> Parameters: 
+2021-12-09 06:17:05.013 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910750241689600[0;39m <==    Updates: 0
+2021-12-09 06:17:05.013 INFO  com.zh.wiki.job.DocJob                            :34   [32m123910750241689600[0;39m 更新电子书下的文档数据结束，耗时：5毫秒
+2021-12-09 06:17:35.007 INFO  com.zh.wiki.job.DocJob                            :31   [32m123910876066615296[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:17:35.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910876066615296[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:17:35.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910876066615296[0;39m ==> Parameters: 
+2021-12-09 06:17:35.013 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123910876066615296[0;39m <==    Updates: 0
+2021-12-09 06:17:35.016 INFO  com.zh.wiki.job.DocJob                            :34   [32m123910876066615296[0;39m 更新电子书下的文档数据结束，耗时：8毫秒
+2021-12-09 06:18:00.015 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123910980957769728[0;39m 生成今日电子书快照开始
+2021-12-09 06:18:00.016 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123910980957769728[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:18:00.017 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123910980957769728[0;39m ==> Parameters: 
+2021-12-09 06:18:00.020 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123910980957769728[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:18:05.014 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911001925095424[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:18:05.015 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911001925095424[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:18:05.016 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911001925095424[0;39m ==> Parameters: 
+2021-12-09 06:18:05.017 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911001925095424[0;39m <==    Updates: 0
+2021-12-09 06:18:05.017 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911001925095424[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:18:35.006 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911127720660992[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:18:35.007 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911127720660992[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:18:35.008 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911127720660992[0;39m ==> Parameters: 
+2021-12-09 06:18:35.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911127720660992[0;39m <==    Updates: 0
+2021-12-09 06:18:35.009 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911127720660992[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:19:00.010 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123911232595038208[0;39m 生成今日电子书快照开始
+2021-12-09 06:19:00.012 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911232595038208[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:19:00.014 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911232595038208[0;39m ==> Parameters: 
+2021-12-09 06:19:00.019 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123911232595038208[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:19:05.001 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911253528809472[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:19:05.001 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911253528809472[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:19:05.002 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911253528809472[0;39m ==> Parameters: 
+2021-12-09 06:19:05.003 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911253528809472[0;39m <==    Updates: 0
+2021-12-09 06:19:05.003 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911253528809472[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 06:19:35.001 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911379357929472[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:19:35.002 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911379357929472[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:19:35.003 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911379357929472[0;39m ==> Parameters: 
+2021-12-09 06:19:35.004 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911379357929472[0;39m <==    Updates: 0
+2021-12-09 06:19:35.004 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911379357929472[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:20:00.006 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123911484236500992[0;39m 生成今日电子书快照开始
+2021-12-09 06:20:00.007 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911484236500992[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:20:00.007 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911484236500992[0;39m ==> Parameters: 
+2021-12-09 06:20:00.010 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123911484236500992[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:20:05.011 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911505224798208[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:20:05.011 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911505224798208[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:20:05.012 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911505224798208[0;39m ==> Parameters: 
+2021-12-09 06:20:05.014 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911505224798208[0;39m <==    Updates: 0
+2021-12-09 06:20:05.014 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911505224798208[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:20:35.015 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911631074889728[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:20:35.016 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911631074889728[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:20:35.017 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911631074889728[0;39m ==> Parameters: 
+2021-12-09 06:20:35.018 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911631074889728[0;39m <==    Updates: 0
+2021-12-09 06:20:35.019 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911631074889728[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:21:00.007 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123911735898935296[0;39m 生成今日电子书快照开始
+2021-12-09 06:21:00.009 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911735898935296[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:21:00.010 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911735898935296[0;39m ==> Parameters: 
+2021-12-09 06:21:00.012 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123911735898935296[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:21:05.008 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911756874649600[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:21:05.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911756874649600[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:21:05.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911756874649600[0;39m ==> Parameters: 
+2021-12-09 06:21:05.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911756874649600[0;39m <==    Updates: 0
+2021-12-09 06:21:05.010 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911756874649600[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 06:21:35.008 INFO  com.zh.wiki.job.DocJob                            :31   [32m123911882703769600[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:21:35.008 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911882703769600[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:21:35.009 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911882703769600[0;39m ==> Parameters: 
+2021-12-09 06:21:35.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123911882703769600[0;39m <==    Updates: 0
+2021-12-09 06:21:35.010 INFO  com.zh.wiki.job.DocJob                            :34   [32m123911882703769600[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 06:22:00.010 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123911987569758208[0;39m 生成今日电子书快照开始
+2021-12-09 06:22:00.011 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911987569758208[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:22:00.012 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123911987569758208[0;39m ==> Parameters: 
+2021-12-09 06:22:00.014 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123911987569758208[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:22:05.002 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912008507723776[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:22:05.002 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912008507723776[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:22:05.002 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912008507723776[0;39m ==> Parameters: 
+2021-12-09 06:22:05.004 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912008507723776[0;39m <==    Updates: 0
+2021-12-09 06:22:05.004 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912008507723776[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 06:22:35.013 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912134382981120[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:22:35.014 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912134382981120[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:22:35.014 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912134382981120[0;39m ==> Parameters: 
+2021-12-09 06:22:35.015 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912134382981120[0;39m <==    Updates: 0
+2021-12-09 06:22:35.016 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912134382981120[0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-12-09 06:23:00.016 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123912239253164032[0;39m 生成今日电子书快照开始
+2021-12-09 06:23:00.017 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912239253164032[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:23:00.018 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912239253164032[0;39m ==> Parameters: 
+2021-12-09 06:23:00.019 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123912239253164032[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:23:05.004 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912260174352384[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:23:05.005 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912260174352384[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:23:05.006 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912260174352384[0;39m ==> Parameters: 
+2021-12-09 06:23:05.007 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912260174352384[0;39m <==    Updates: 0
+2021-12-09 06:23:05.008 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912260174352384[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:23:35.014 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912386045415424[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:23:35.015 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912386045415424[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:23:35.015 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912386045415424[0;39m ==> Parameters: 
+2021-12-09 06:23:35.016 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912386045415424[0;39m <==    Updates: 0
+2021-12-09 06:23:35.017 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912386045415424[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:24:00.012 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123912490894626816[0;39m 生成今日电子书快照开始
+2021-12-09 06:24:00.013 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912490894626816[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:24:00.014 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912490894626816[0;39m ==> Parameters: 
+2021-12-09 06:24:00.016 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123912490894626816[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:24:05.011 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912511861952512[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:24:05.011 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912511861952512[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:24:05.012 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912511861952512[0;39m ==> Parameters: 
+2021-12-09 06:24:05.014 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912511861952512[0;39m <==    Updates: 0
+2021-12-09 06:24:05.014 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912511861952512[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:24:35.010 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912637686878208[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:24:35.013 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912637686878208[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:24:35.014 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912637686878208[0;39m ==> Parameters: 
+2021-12-09 06:24:35.017 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912637686878208[0;39m <==    Updates: 0
+2021-12-09 06:24:35.018 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912637686878208[0;39m 更新电子书下的文档数据结束，耗时：7毫秒
+2021-12-09 06:25:00.007 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123912742531895296[0;39m 生成今日电子书快照开始
+2021-12-09 06:25:00.008 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912742531895296[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:25:00.008 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912742531895296[0;39m ==> Parameters: 
+2021-12-09 06:25:00.010 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123912742531895296[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
+2021-12-09 06:25:05.001 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912763478249472[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:25:05.002 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912763478249472[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:25:05.003 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912763478249472[0;39m ==> Parameters: 
+2021-12-09 06:25:05.005 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912763478249472[0;39m <==    Updates: 0
+2021-12-09 06:25:05.006 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912763478249472[0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-12-09 06:25:35.009 INFO  com.zh.wiki.job.DocJob                            :31   [32m123912889340923904[0;39m 更新电子书下的文档数据开始
+2021-12-09 06:25:35.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912889340923904[0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-12-09 06:25:35.010 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912889340923904[0;39m ==> Parameters: 
+2021-12-09 06:25:35.011 DEBUG com.zh.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m123912889340923904[0;39m <==    Updates: 0
+2021-12-09 06:25:35.012 INFO  com.zh.wiki.job.DocJob                            :34   [32m123912889340923904[0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-12-09 06:26:00.004 INFO  com.zh.wiki.job.EbookSnapshotJob                  :32   [32m123912994177552384[0;39m 生成今日电子书快照开始
+2021-12-09 06:26:00.006 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912994177552384[0;39m ==>  Preparing: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase) select t1.id, curdate(), 0, 0, 0, 0 from ebook t1 where not exists(select 1 from ebook_snapshot t2 where t1.id = t2.ebook_id and t2.`date` = curdate()); update ebook_snapshot t1, ebook t2 set t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.`date` = curdate() and t1.ebook_id = t2.id; update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count from ebook_snapshot where `date` = date_sub(curdate(), interval 1 day)) t2 on t1.ebook_id = t2.ebook_id set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)), t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0)) where t1.`date` = curdate();
+2021-12-09 06:26:00.007 DEBUG c.z.w.mapper.EbookSnapshotMapperCust.genSnapshot  :137  [32m123912994177552384[0;39m ==> Parameters: 
+2021-12-09 06:26:00.011 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m123912994177552384[0;39m Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+### The error may exist in file [C:\zhangle\codespace\space_java\sprinboot_wiki\wiki\target\classes\mapper\EbookSnapshotMapperCust.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)         select t1.id, curdate(), 0, 0, 0, 0         from ebook t1         where not exists(select 1                          from ebook_snapshot t2                          where t1.id = t2.ebook_id                            and t2.`date` = curdate());          update ebook_snapshot t1, ebook t2         set t1.view_count = t2.view_count,             t1.vote_count = t2.vote_count         where t1.`date` = curdate()           and t1.ebook_id = t2.id;          update ebook_snapshot t1 left join (select ebook_id, view_count, vote_count                                             from ebook_snapshot                                             where `date` = date_sub(curdate(), interval 1 day)) t2             on t1.ebook_id = t2.ebook_id         set t1.view_increase = (t1.view_count - ifnull(t2.view_count, 0)),             t1.vote_increase = (t1.vote_count - ifnull(t2.vote_count, 0))         where t1.`date` = curdate();
+### Cause: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+	at com.sun.proxy.$Proxy89.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy167.genSnapshot(Unknown Source)
+	at com.zh.wiki.service.EbookSnapshotService.genSnapshot(EbookSnapshotService.java:17)
+	at com.zh.wiki.job.EbookSnapshotJob.doSnapshot(EbookSnapshotJob.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'wiki.ebook_snapshot' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy152.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy150.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	... 21 common frames omitted
