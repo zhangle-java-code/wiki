@@ -30,18 +30,30 @@ public class EbookService {
     @Resource
     private SnowFlake snowFlake;
 
+    /**
+     * 查询列表
+     * @param req
+     * @return
+     */
     public PageResp<EbookQueryResp> list(EbookQueryReq req) {
+        //! 1. 条件查询: Example
         EbookExample ebookExample = new EbookExample();
+        //! 2. 创建查询实例
         EbookExample.Criteria criteria = ebookExample.createCriteria();
+        //! 3. 添加查询条件
         if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
         }
+        //! 4. 二级分类查询
         if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
             criteria.andCategory2IdEqualTo(req.getCategoryId2());
         }
+        //! 5. 通用查询条件
         PageHelper.startPage(req.getPage(), req.getSize());
+        // 根据条件查询
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
 
+        //! 6. 封装分页信息
         PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
         LOG.info("总行数：{}", pageInfo.getTotal());
         LOG.info("总页数：{}", pageInfo.getPages());
@@ -56,9 +68,10 @@ public class EbookService {
         //     respList.add(ebookResp);
         // }
 
-        // 列表复制
+        //! 7. 封装返回结果，转移到查询响应中
         List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
 
+        //! 8. 封装返回结果
         PageResp<EbookQueryResp> pageResp = new PageResp();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
@@ -72,11 +85,12 @@ public class EbookService {
     public void save(EbookSaveReq req) {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
         if (ObjectUtils.isEmpty(req.getId())) {
-            // 新增
+            // ! 新增
+            // TODO: 2020/3/24 新增时，需要设置主键
             ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
         } else {
-            // 更新
+            // ! 更新
             ebookMapper.updateByPrimaryKey(ebook);
         }
     }

@@ -31,7 +31,9 @@ public class CategoryService {
     private SnowFlake snowFlake;
 
     public List<CategoryQueryResp> all() {
+        // 实例化查询条件
         CategoryExample categoryExample = new CategoryExample();
+        // TODO 针对某个字段进行排序
         categoryExample.setOrderByClause("sort asc");
         List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
 

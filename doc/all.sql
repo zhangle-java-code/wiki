@@ -17,6 +17,7 @@ drop table if exists `demo`;
 create table `demo` (
                         `id` bigint not null COMMENT 'id',
                         `name` varchar(50) COMMENT '名称',
+                        `password` varchar(50) COMMENT '名称',
                         primary key (`id`)
 ) engine=InnoDB default charset=utf8mb4 comment= '测试';
 insert into `demo` (id, name) values (1,'测试');
@@ -48,6 +49,7 @@ insert into`ebook`(id, name, description) values(4, 'Mysql入门教程', '零基
 最佳首选框架');
 insert into`ebook`(id, name, description) values(5,'Oracle入门教程','零基础入门Oracle开发, 企业级应用
 开发最佳首选框架');
+insert into`ebook`(id, name, description) values(6,'前端入门教程','大前端入门库康佳');
 
 
 # 电子书分类表

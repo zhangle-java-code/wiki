@@ -22,12 +22,14 @@ public class CategoryController {
 
     @GetMapping("/all")
     public CommonResp all(){
+        // TODO 未做层级嵌套
         CommonResp<List<CategoryQueryResp>> resp = new CommonResp<>();
         List<CategoryQueryResp> list = categoryService.all();
         resp.setContent(list);
         return resp;
     }
 
+    // 分类列表实现
     @GetMapping("/list")
     public CommonResp list(CategoryQueryReq req){
         CommonResp<PageResp<CategoryQueryResp>> resp = new CommonResp<>();
