@@ -78,6 +78,7 @@ public class CategoryService {
      * 保存
      */
     public void save(CategorySaveReq req) {
+        // 转化实力对象，通过mapper存储到数据库
         Category category = CopyUtil.copy(req, Category.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
