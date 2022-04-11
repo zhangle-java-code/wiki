@@ -10,7 +10,10 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 import java.util.HashMap;
 
+//!将Bean注入Spring容器的五种方式
+//!@ComponentScan + @Component
 @Component
+//! ServerEndpoint 类似 @controller
 @ServerEndpoint("/ws/{token}")
 public class WebSocketServer {
     private static final Logger LOG = LoggerFactory.getLogger(WebSocketServer.class);
@@ -20,11 +23,13 @@ public class WebSocketServer {
      */
     private String token = "";
 
+    //!新的连接，每次进来一个都放在这个里面
     private static HashMap<String, Session> map = new HashMap<>();
 
     /**
      * 连接成功
      */
+    // @PathParam("token") 获取路径参数
     @OnOpen
     public void onOpen(Session session, @PathParam("token") String token) {
         map.put(token, session);

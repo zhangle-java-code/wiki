@@ -151,7 +151,7 @@ public class DocService {
      */
     public void vote(Long id) {
         // docMapperCust.increaseVoteCount(id);
-        // 远程IP+doc.id作为key，24小时内不能重复
+        //! 远程IP+doc.id作为key，24小时内不能重复
         String ip = RequestContext.getRemoteAddr();
         if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 5000)) {
             docMapperCust.increaseVoteCount(id);
