@@ -11,4 +11,13 @@ where t1.id = t2.ebook_id;
 
 
 
+select id, curdate(), 0, 0, 0, 0 from ebook;
 
+
+insert into ebook_snapshot(ebook_id, `date`, view_count, vote_count, view_increase, vote_increase)
+select t1.id, curdate(), 0, 0, 0, 0
+from ebook t1
+where not exists(select 1
+                 from ebook_snapshot t2
+                 where t1.id = t2.ebook_id
+                   and t2.`date` = curdate());

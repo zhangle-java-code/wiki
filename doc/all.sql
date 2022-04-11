@@ -132,7 +132,7 @@ create table `ebook_snapshot` (
     `vote_increase` int not null default 0 comment '点赞数增长',
     primary key (`id`),
     unique key `ebook_id_date_unique` (`ebook_id`,`date`)
-)engine=innodb default charset=utf8mb4 comment= '电子书快照表'
+)engine=innodb default charset=utf8mb4 comment= '电子书快照表';
 
 
 
