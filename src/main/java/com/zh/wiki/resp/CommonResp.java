@@ -1,5 +1,6 @@
 package com.zh.wiki.resp;
 
+//?通用返回类, 这里使用 <T>
 public class CommonResp<T> {
 
     /**
@@ -41,6 +42,7 @@ public class CommonResp<T> {
         this.content = content;
     }
 
+    //? toString 内容如何生成, 有什么作用，生成方式不一致
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("ResponseDto{");
