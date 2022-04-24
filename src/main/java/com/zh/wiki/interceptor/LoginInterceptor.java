@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
  */
+//! 拦截器，常用登录校验
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
 

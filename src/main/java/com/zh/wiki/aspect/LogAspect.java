@@ -22,14 +22,13 @@ import javax.servlet.http.HttpServletRequest;
 
 //! 切点和通知叫做切面
 //! 切面知识点: 前置、后置、环绕、异常
-
 @Aspect
 @Component
 public class LogAspect {
 
     private final static Logger LOG = LoggerFactory.getLogger(LogAspect.class);
 
-    /** 定义一个切点 */
+    // !定义一个切点
     @Pointcut("execution(public * com.zh.*.controller..*Controller.*(..))")
     public void controllerPointcut() {}
 
@@ -90,7 +89,7 @@ public class LogAspect {
     }
 
     /**
-     * 使用nginx做反向代理，需要用该方法才能取到真实的远程IP
+     * !使用nginx做反向代理，需要用该方法才能取到真实的远程IP
      * @param request
      * @return
      */
