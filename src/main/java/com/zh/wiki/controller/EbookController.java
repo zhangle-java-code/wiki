@@ -6,9 +6,11 @@ import com.zh.wiki.resp.CommonResp;
 import com.zh.wiki.resp.EbookQueryResp;
 import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.service.EbookService;
+//? annotation
 import org.springframework.web.bind.annotation.*;
-
+//? Resource
 import javax.annotation.Resource;
+//? 校验参数
 import javax.validation.Valid;
 
 @RestController

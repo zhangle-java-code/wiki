@@ -31,6 +31,7 @@ public class EbookQueryReq extends PageReq {
         this.name = name;
     }
 
+    //? toString 内容不一致，和其他模块toString内容不一致
     @Override
     public String toString() {
         return "EbookQueryReq{" +

@@ -25,10 +25,9 @@ public class PageResp<T> {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("PageResp{");
-        sb.append("total=").append(total);
-        sb.append(", list=").append(list);
-        sb.append('}');
-        return sb.toString();
+        return "PageResp{" +
+                "total=" + total +
+                ", list=" + list +
+                '}';
     }
 }
