@@ -33,11 +33,11 @@ public class CategoryService {
     public List<CategoryQueryResp> all() {
         // 实例化查询条件
         CategoryExample categoryExample = new CategoryExample();
-        // TODO 针对某个字段进行排序
+        // ! 设置查询条件
         categoryExample.setOrderByClause("sort asc");
         List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
 
-        // 列表复制
+        // ?列表复制, 进行转化
         List<CategoryQueryResp> list = CopyUtil.copyList(categoryList, CategoryQueryResp.class);
 
         return list;

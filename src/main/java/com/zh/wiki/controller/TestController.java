@@ -17,15 +17,18 @@ import java.util.List;
 @RestController
 public class TestController {
 
+    // @Resource和Overrides区别
     @Resource
     private TestService testService;
 
-    //! 获取默认值
+    //! 获取环境变量值
     @Value("${test.hello:Test}")
     private String testHello;
 
     //! 支持所有请求方式`
-    //@RequestMapping("/hello")
+    //  编写方式不一致
+    // @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    // @RequestMapping("/hello")
     @GetMapping("/hello")
     //@PostMapping("/hello")
     //@PutMapping("/hello")

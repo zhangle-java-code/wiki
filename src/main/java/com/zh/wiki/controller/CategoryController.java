@@ -23,7 +23,7 @@ public class CategoryController {
 
     @GetMapping("/all")
     public CommonResp all(){
-        // TODO 未做层级嵌套
+        // TODO 接口未将数据未做层级嵌套
         CommonResp<List<CategoryQueryResp>> resp = new CommonResp<>();
         List<CategoryQueryResp> list = categoryService.all();
         resp.setContent(list);

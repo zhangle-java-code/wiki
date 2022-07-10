@@ -10,12 +10,13 @@ import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-// @ComponentScan({"com.zh", "com.test"})
+// ! 扫描包 @ComponentScan({"com.zh", "com.test"})
 @ComponentScan("com.zh")
 @SpringBootApplication
 @MapperScan("com.zh.wiki.mapper")
-// TODO 启动定时任务
-@EnableScheduling
+// !启动定时任务
+//@EnableScheduling
+// !启动异步任务的
 @EnableAsync
 public class WikiApplication {
 
