@@ -8,6 +8,7 @@ create table `test` (
 
 
 insert into `test` (id, name, password) values (1,'测试','password');
+insert into `test` (id, name, password) values (3,'测试1','password');
 
 select * from `test`;
 

@@ -14,6 +14,7 @@ public class DemoService {
     private DemoMapper demoMapper;
 
     public List<Demo> list() {
+        // ! 普通查询
         return demoMapper.selectByExample(null);
     }
 }
