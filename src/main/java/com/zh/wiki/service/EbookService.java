@@ -37,20 +37,20 @@ public class EbookService {
      */
     public PageResp<EbookQueryResp> list(EbookQueryReq req) {
         //! 1. 条件查询: Example
-        EbookExample ebookExample = new EbookExample();
         //! 2. 创建查询实例
+        EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         //! 3. 添加查询条件
+        //! 4. 二级分类查询
         if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
         }
-        //! 4. 二级分类查询
         if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
             criteria.andCategory2IdEqualTo(req.getCategoryId2());
         }
         //! 5. 通用查询条件
         PageHelper.startPage(req.getPage(), req.getSize());
-        // 根据条件查询
+        // !根据条件查询
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
 
         //! 6. 封装分页信息
@@ -58,6 +58,7 @@ public class EbookService {
         LOG.info("总行数：{}", pageInfo.getTotal());
         LOG.info("总页数：{}", pageInfo.getPages());
 
+        // ! 复制属性进行封装
         // List<EbookResp> respList = new ArrayList<>();
         // for (Ebook ebook : ebookList) {
         //     // EbookResp ebookResp = new EbookResp();
@@ -77,6 +78,19 @@ public class EbookService {
         pageResp.setList(list);
 
         return pageResp;
+    }
+
+    /**
+     * 普通查询列表
+     * @param req
+     * @return
+     */
+    public List<EbookQueryResp> listSimple(EbookQueryReq req) {
+
+        List<Ebook> ebookList = ebookMapper.selectByExample(null);
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+
+        return list;
     }
 
     /**

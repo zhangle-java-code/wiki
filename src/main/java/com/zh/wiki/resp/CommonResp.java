@@ -14,7 +14,7 @@ public class CommonResp<T> {
     private String message;
 
     /**
-     * 返回泛型数据，自定义类型
+     * !返回泛型数据，自定义类型
      */
     private T content;
 
@@ -42,7 +42,7 @@ public class CommonResp<T> {
         this.content = content;
     }
 
-    //? toString 内容如何生成, 有什么作用，生成方式不一致
+    // ? toString 内容如何生成, 有什么作用，生成方式不一致
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("ResponseDto{");

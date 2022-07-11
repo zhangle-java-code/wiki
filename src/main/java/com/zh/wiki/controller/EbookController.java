@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 //? 校验参数
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/ebook")
@@ -27,6 +28,15 @@ public class EbookController {
         resp.setContent(list);
         return resp;
     }
+
+    @GetMapping("/list/simple")
+    public CommonResp listSimple(@Valid EbookQueryReq req) {
+        CommonResp<List<EbookQueryResp>> resp = new CommonResp<>();
+        List<EbookQueryResp> list = ebookService.listSimple(null);
+        resp.setContent(list);
+        return resp;
+    }
+
 
     @PostMapping("/save")
     public CommonResp save(@RequestBody EbookSaveReq req) {

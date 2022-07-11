@@ -39,7 +39,7 @@
         <javaClientGenerator targetProject="src\main\java"
                              targetPackage="com.zh.wiki.mapper"
                              type="XMLMAPPER"/>
-
+        <!-- * domainObjectName 生成大写 -->
         <!--<table tableName="demo" domainObjectName="Demo"/>-->
         <!--<table tableName="ebook"/>-->
         <!--<table tableName="category"/>-->
