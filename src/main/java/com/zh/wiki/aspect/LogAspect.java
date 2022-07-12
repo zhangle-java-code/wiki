@@ -28,7 +28,7 @@ public class LogAspect {
 
     private final static Logger LOG = LoggerFactory.getLogger(LogAspect.class);
 
-    // !定义一个切点
+    // ! 定义一个切点
     @Pointcut("execution(public * com.zh.*.controller..*Controller.*(..))")
     public void controllerPointcut() {}
 
@@ -83,8 +83,8 @@ public class LogAspect {
         PropertyPreFilters filters = new PropertyPreFilters();
         PropertyPreFilters.MySimplePropertyPreFilter excludefilter = filters.addFilter();
         excludefilter.addExcludes(excludeProperties);
-        LOG.info("返回结果: {}", JSONObject.toJSONString(result, excludefilter));
-        LOG.info("------------- 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
+        LOG.info("Aspect/返回结果: {}", JSONObject.toJSONString(result, excludefilter));
+        LOG.info("------------- Aspect/结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
         return result;
     }
 

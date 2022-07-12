@@ -7,7 +7,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// ? 单个复制和列表复制
 public class CopyUtil {
 
     /**
@@ -19,7 +19,9 @@ public class CopyUtil {
         }
         T obj = null;
         try {
-            obj = clazz.newInstance();
+            // ! 被放弃
+            //obj = clazz.newInstance();
+            obj = clazz.getDeclaredConstructor().newInstance();
         } catch (Exception e) {
             //? 异常处理内容
             e.printStackTrace();
