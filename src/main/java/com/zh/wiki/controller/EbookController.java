@@ -37,6 +37,13 @@ public class EbookController {
         return resp;
     }
 
+    @GetMapping("/list/v1")
+    public CommonResp listV1(@Valid EbookQueryReq req) {
+        CommonResp<List<EbookQueryResp>> resp = new CommonResp<>();
+        List<EbookQueryResp> list = ebookService.listV1(req);
+        resp.setContent(list);
+        return resp;
+    }
 
     @PostMapping("/save")
     public CommonResp save(@RequestBody EbookSaveReq req) {

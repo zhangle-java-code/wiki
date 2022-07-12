@@ -13,10 +13,12 @@ import com.zh.wiki.util.CopyUtil;
 import com.zh.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -92,6 +94,46 @@ public class EbookService {
 
         return list;
     }
+
+    public List<EbookQueryResp> listV1(EbookQueryReq req) {
+        //! 1. 条件查询: Example
+        //! 2. 创建查询实例
+        EbookExample ebookExample = new EbookExample();
+        EbookExample.Criteria criteria = ebookExample.createCriteria();
+        //! 3. 添加查询条件
+        //! 4. 二级分类查询
+        if (!ObjectUtils.isEmpty(req.getName())) {
+            criteria.andNameLike("%" + req.getName() + "%");
+        }
+        if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
+            criteria.andCategory2IdEqualTo(req.getCategoryId2());
+        }
+        //! 5. 通用查询条件
+        PageHelper.startPage(req.getPage(), req.getSize());
+        // !根据条件查询
+        List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
+
+        //! 6. 封装分页信息
+        PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+        LOG.info("总行数：{}", pageInfo.getTotal());
+        LOG.info("总页数：{}", pageInfo.getPages());
+
+        // ! 复制属性进行封装
+         List<EbookQueryResp> respList = new ArrayList<>();
+         for (Ebook ebook : ebookList) {
+             EbookQueryResp ebookResp = new EbookQueryResp();
+              BeanUtils.copyProperties(ebook, ebookResp);
+             // 对象复制
+             //EbookQueryResp ebookResp = CopyUtil.copy(ebook, EbookQueryResp.class);
+
+             respList.add(ebookResp);
+         }
+
+        //! 7. 封装返回结果，转移到查询响应中
+        //List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+        return respList;
+    }
+
 
     /**
      * 保存

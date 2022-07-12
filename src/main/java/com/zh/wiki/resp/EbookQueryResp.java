@@ -19,6 +19,7 @@ public class EbookQueryResp {
 
     private Integer voteCount;
 
+
     public Long getId() {
         return id;
     }
