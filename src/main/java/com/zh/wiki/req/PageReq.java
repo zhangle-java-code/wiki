@@ -7,6 +7,7 @@ import javax.validation.constraints.NotNull;
 // !分页查询请求
 public class PageReq {
 
+    //! spring-boot-starter-validation 桉树校验
     @NotNull(message = "【页码】不能为空")
     private int page;
 

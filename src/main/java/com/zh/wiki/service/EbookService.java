@@ -143,9 +143,11 @@ public class EbookService {
      */
     public void save(EbookSaveReq req) {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        // ! 判断新增还是编辑
         if (ObjectUtils.isEmpty(req.getId())) {
             // ! 新增
             // TODO: 2020/3/24 新增时，需要设置主键
+            // !学法算法
             ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
         } else {

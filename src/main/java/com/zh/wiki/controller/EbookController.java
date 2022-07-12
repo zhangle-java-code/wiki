@@ -23,6 +23,7 @@ public class EbookController {
 
     @GetMapping("/list")
     public CommonResp list(@Valid EbookQueryReq req) {
+        //! @Valid 添加校验参数，@Valid 校验参数不通过，直接抛出异常
         CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
         PageResp<EbookQueryResp> list = ebookService.list(req);
         resp.setContent(list);
@@ -52,6 +53,7 @@ public class EbookController {
         return resp;
     }
     @DeleteMapping("/delete/{id}")
+    // !PathVariable 获取路径参数
     public CommonResp delete (@PathVariable Long id){
         CommonResp resp = new CommonResp<>();
         ebookService.delete(id);
