@@ -51,12 +51,15 @@ public class EbookService {
             criteria.andCategory2IdEqualTo(req.getCategoryId2());
         }
         //! 5. 通用查询条件
-        PageHelper.startPage(req.getPage(), req.getSize());
+        // ? PageHelper.startPage 直接支持分页
+        // !PageHelper 只对第一次查询有效, 后续查询不会自动分页
         // !根据条件查询
+        PageHelper.startPage(req.getPage(), req.getSize());
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
 
         //! 6. 封装分页信息
         PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+        //! {} 占位符
         LOG.info("总行数：{}", pageInfo.getTotal());
         LOG.info("总页数：{}", pageInfo.getPages());
 

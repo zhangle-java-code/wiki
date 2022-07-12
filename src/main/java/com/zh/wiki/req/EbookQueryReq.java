@@ -1,5 +1,6 @@
 package com.zh.wiki.req;
 
+//! 继承分页
 public class EbookQueryReq extends PageReq {
     private Long id;
 

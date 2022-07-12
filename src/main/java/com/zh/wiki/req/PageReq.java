@@ -4,6 +4,7 @@ package com.zh.wiki.req;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 
+// !分页查询请求
 public class PageReq {
 
     @NotNull(message = "【页码】不能为空")
