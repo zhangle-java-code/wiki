@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+//! 为了让异步化生效，需要在类上加上@Async注解
 @Service
 public class WsService {
 

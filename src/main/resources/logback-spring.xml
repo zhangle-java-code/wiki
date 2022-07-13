@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <!-- 修改一下路径-->
+    <!-- ! 日志修改一下路径-->
     <property name="PATH" value="./log"></property>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">

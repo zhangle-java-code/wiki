@@ -162,6 +162,7 @@ public class DocService {
         // 推送消息
         Doc docDb = docMapper.selectByPrimaryKey(id);
         String logId = MDC.get("LOG_ID");
+        // !通过日志好进行查看 异步化推送消息, 不能在同一个类中实现
         wsService.sendInfo("【" + docDb.getName() + "】被点赞！", logId);
         // rocketMQTemplate.convertAndSend("VOTE_TOPIC", "【" + docDb.getName() + "】被点赞！");
     }

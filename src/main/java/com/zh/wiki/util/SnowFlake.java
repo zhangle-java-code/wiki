@@ -61,6 +61,7 @@ public class SnowFlake {
      *
      * @return
      */
+    // !synchronized 异步控制并发
     public synchronized long nextId() {
         long currStmp = getNewstmp();
         if (currStmp < lastStmp) {

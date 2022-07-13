@@ -16,7 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @MapperScan("com.zh.wiki.mapper")
 // !启动定时任务
 //@EnableScheduling
-// !启动异步任务的
+// !启动异步任务的 synchronized 异步
 @EnableAsync
 public class WikiApplication {
 
