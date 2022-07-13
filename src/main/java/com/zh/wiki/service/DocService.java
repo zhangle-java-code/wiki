@@ -101,6 +101,7 @@ public class DocService {
     /**
      * 保存
      */
+    //! 同时执行两个事务，一个更新doc表，一个更新content表
     @Transactional
     public void save(DocSaveReq req) {
         Doc doc = CopyUtil.copy(req, Doc.class);
@@ -110,9 +111,11 @@ public class DocService {
             doc.setId(snowFlake.nextId());
             doc.setViewCount(0);
             doc.setVoteCount(0);
+            // !一个更新doc表
             docMapper.insert(doc);
 
             content.setId(doc.getId());
+            //!一个更新content表
             contentMapper.insert(content);
         } else {
             // 更新
