@@ -17,6 +17,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Resource
     ActionInterceptor actionInterceptor;
 
+    //? 拦截器执行顺序，从上到下，从左到右
     public void addInterceptors(InterceptorRegistry registry) {
         //!拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
         registry.addInterceptor(loginInterceptor)
