@@ -58,6 +58,8 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         } else {
             LOG.info("已登录：{}", object);
+            // ? 字符串 Object JSON.parseObject((String) object, UserLoginResp.class)
+            // !用户信息上下文
             LoginUserContext.setUser(JSON.parseObject((String) object, UserLoginResp.class));
             return true;
         }

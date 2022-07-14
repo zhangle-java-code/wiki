@@ -9,7 +9,6 @@ import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
-// ? Resource装饰器作用
 import javax.annotation.Resource;
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
 @RequestMapping("/category")
 public class CategoryController {
 
-
+    // ? Resource装饰器作用
     @Resource
     private CategoryService categoryService;
 

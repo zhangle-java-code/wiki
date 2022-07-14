@@ -81,11 +81,16 @@ public class UserController {
         CommonResp<UserLoginResp> resp = new CommonResp<>();
         UserLoginResp userLoginResp = userService.login(req);
 
-        // ? 为什么是否long类型
+        // ? id long类型
+        // ?jwt 实现过程
+        // 1. 生成tokens
+        // 2. token存入redis
+        // 3. 拦截器进行通过获取header token;
+        // 4. 通过token从redis中获取用户信息;
         Long token = snowFlake.nextId();
         LOG.info("生成单点登录token：{}，并放入redis中", token);
         userLoginResp.setToken(token.toString());
-        // ! redis
+        // !redis, 将用户信息放入redis中，便于登录查询
         redisTemplate.opsForValue().set(token.toString(), JSONObject.toJSONString(userLoginResp), 3600 * 24, TimeUnit.SECONDS);
 
         resp.setContent(userLoginResp);

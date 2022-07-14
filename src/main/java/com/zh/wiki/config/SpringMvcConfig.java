@@ -36,6 +36,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
 
         //! 拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
+        // !权限拦截
         registry.addInterceptor(actionInterceptor)
                 .addPathPatterns(
                         "/*/save",

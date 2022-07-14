@@ -81,11 +81,11 @@ public class UserService {
                 user.setId(snowFlake.nextId());
                 userMapper.insert(user);
             } else {
-                // 用户名已存在
+                // !用户名已存在
                 throw new BusinessException(BusinessExceptionCode.USER_LOGIN_NAME_EXIST);
             }
         } else {
-            // 更新
+            // !登录和用户名不能修改
             user.setLoginName(null);
             user.setPassword(null);
             userMapper.updateByPrimaryKeySelective(user);
@@ -120,12 +120,16 @@ public class UserService {
      * 登录
      */
     public UserLoginResp login(UserLoginReq req) {
+        //! 1 确定数据库中存在该用户
         User userDb = selectByLoginName(req.getLoginName());
         if (ObjectUtils.isEmpty(userDb)) {
             // 用户名不存在
             LOG.info("用户名不存在, {}", req.getLoginName());
+            // ! 抛出异常
             throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
         } else {
+            // !判断数据密码和请求密码是否一致
+            // equals,equalsIgnoreCase,compareTo,compareToIgnoreCase
             if (userDb.getPassword().equals(req.getPassword())) {
                 // 登录成功
                 UserLoginResp userLoginResp = CopyUtil.copy(userDb, UserLoginResp.class);

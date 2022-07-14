@@ -1,5 +1,6 @@
 package com.zh.wiki.exception;
 
+// ?业务异常枚举
 public enum BusinessExceptionCode {
 
     USER_LOGIN_NAME_EXIST("登录名已存在"),

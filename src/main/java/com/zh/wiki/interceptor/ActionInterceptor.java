@@ -30,6 +30,7 @@ public class ActionInterceptor implements HandlerInterceptor {
             return true;
         }
         // !权限验证
+        // !新增，删除，修改只有 管理员可以进行操作
         UserLoginResp userLoginResp = LoginUserContext.getUser();
         if ("admin".equals(userLoginResp.getLoginName())) {
             // admin用户不拦截
@@ -43,6 +44,8 @@ public class ActionInterceptor implements HandlerInterceptor {
         commonResp.setMessage("哈哈，操作被拦截了，你就当操作成功了！示例网站暂不开放增删改操作");
         response.setContentType("application/json;charset=UTF-8");
         response.setCharacterEncoding("UTF-8");
+        // ! JSONObject.toJSON(commonResp)
+        // ! response.getWriter().print
         response.getWriter().print(JSONObject.toJSON(commonResp));
         return false;
     }
