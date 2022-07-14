@@ -47,6 +47,7 @@ public class DocController {
     @DeleteMapping("/delete/{idsStr}")
     public CommonResp delete(@PathVariable String idsStr) {
         CommonResp resp = new CommonResp<>();
+        // ! 批量删除
         List<String> list = Arrays.asList(idsStr.split(","));
         docService.delete(list);
         return resp;
@@ -55,6 +56,8 @@ public class DocController {
     @GetMapping("/find-content/{id}")
     public CommonResp findContent(@PathVariable Long id) {
         CommonResp<String> resp = new CommonResp<>();
+        //! 1. 查询文档内容
+        //! 2. 文档访问量+1
         String content = docService.findContent(id);
         resp.setContent(content);
         return resp;

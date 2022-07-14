@@ -2,7 +2,15 @@
 select count(1), SUM(view_count) from doc where ebook_id = 2;
 
 
-select ebook_id,name,count(1) doc_count, SUM(view_count) view_count ,SUM(vote_count) vote_count from doc group by ebook_id;
+select
+    ebook_id,
+    name,
+    count(1) doc_count,
+    SUM(view_count) view_count ,
+    SUM(vote_count) vote_count
+from
+    doc
+group by ebook_id;
 
 # 两个表相互关联
 update ebook t1,(select ebook_id,name,count(1) doc_count, SUM(view_count) view_count ,SUM(vote_count) vote_count from doc group by ebook_id) t2

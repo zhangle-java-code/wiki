@@ -71,6 +71,7 @@ public class DocService {
         DocExample docExample = new DocExample();
         docExample.setOrderByClause("sort asc");
         DocExample.Criteria criteria = docExample.createCriteria();
+
         PageHelper.startPage(req.getPage(), req.getSize());
         List<Doc> docList = docMapper.selectByExample(docExample);
 
@@ -140,7 +141,7 @@ public class DocService {
 
     public String findContent(Long id) {
         Content content = contentMapper.selectByPrimaryKey(id);
-        // 文档阅读数+1
+        // ! 文档阅读数+1
         docMapperCust.increaseViewCount(id);
         if (ObjectUtils.isEmpty(content)) {
             return "";
@@ -153,9 +154,10 @@ public class DocService {
      * 点赞
      */
     public void vote(Long id) {
-        // docMapperCust.increaseVoteCount(id);
         //! 远程IP+doc.id作为key，24小时内不能重复
+        //? 获取ip地址
         String ip = RequestContext.getRemoteAddr();
+        LOG.warn("ip：{}", ip);
         if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 5000)) {
             docMapperCust.increaseVoteCount(id);
         } else {
