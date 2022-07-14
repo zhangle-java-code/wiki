@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * !统一异常处理、数据预处理等
+ * ? 统一异常处理、数据预处理等
  */
+// ? 拦截业务代码异常信息，统一返回
+// ? BindException.class 和 Exception.class 区别
+// ? 异常和参数校验
+// https://blog.csdn.net/weixin_39988677/article/details/110509639
 @ControllerAdvice
 public class ControllerExceptionHandler {
 
@@ -21,6 +25,7 @@ public class ControllerExceptionHandler {
      * @param e
      * @return
      */
+    // ?
     @ExceptionHandler(value = BindException.class)
     @ResponseBody
     public CommonResp validExceptionHandler(BindException e) {
@@ -36,6 +41,7 @@ public class ControllerExceptionHandler {
      * @param e
      * @return
      */
+    // ?
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public CommonResp validExceptionHandler(Exception e) {
