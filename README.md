@@ -2,7 +2,8 @@
 * 分页
 * lombook
 
-```text
+#### 区别
+``` 
 final StringBuffer sb = new StringBuffer("ResponseDto{");
 StringBuilder sb = new StringBuilder();
 ```
