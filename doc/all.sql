@@ -124,6 +124,7 @@ insert into `user` (id, login_name, name, password) values (1,'test', '测试','
 
 
 # 电子书快照表
+# !auto_increment 分库分表不适用
 drop table if exists `ebook_snapshot`;
 create table `ebook_snapshot` (
     `id` bigint auto_increment not null comment 'id',
