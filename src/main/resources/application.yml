@@ -1,1 +1,6 @@
 #server.port=8080
+
+# profiles = y的专用属性，用于指定使用哪个配置文件，默认为default
+#spring:
+#  profiles:
+#    active: prod
