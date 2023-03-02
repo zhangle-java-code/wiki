@@ -1,3 +1,5 @@
+// interface TestMapper
+// 接口
 package com.zh.wiki.mapper;
 
 import com.zh.wiki.domain.Test;

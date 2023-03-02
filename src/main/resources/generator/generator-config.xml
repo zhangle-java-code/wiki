@@ -45,6 +45,7 @@
         <!--<table tableName="category"/>-->
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
+        <!-- ! 不要使用root账号，避免添加不必要内容 -->
         <!--<table tableName="user"/>-->
         <!--<table tableName="ebook_snapshot"/>-->
     </context>

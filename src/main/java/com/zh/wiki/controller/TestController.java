@@ -21,14 +21,16 @@ public class TestController {
     @Resource
     private TestService testService;
 
-    //! 获取环境变量值
+    //! 获取环境变量值, 获取配置文件
     @Value("${test.hello:Test}")
     private String testHello;
 
-    //! 支持所有请求方式`
+    //! 支持所有请求方式: RequestMapping 形式
     //  编写方式不一致
     // @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    // @RequestMapping(value = "/hello/1", method = RequestMethod.GET)
     // @RequestMapping("/hello")
+    // 简写
     @GetMapping("/hello")
     //@PostMapping("/hello")
     //@PutMapping("/hello")

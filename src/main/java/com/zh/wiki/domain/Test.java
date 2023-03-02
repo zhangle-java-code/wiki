@@ -1,5 +1,7 @@
 package com.zh.wiki.domain;
 
+//! 实体类和数据库列一一对应
+
 public class Test {
 
     private Integer id;

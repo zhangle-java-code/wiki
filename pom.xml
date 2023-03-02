@@ -5,6 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
+        <!-- 升级版本号 -->
         <version>2.4.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
@@ -100,6 +101,7 @@
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.4.0</version>
                 <configuration>
+                    <!-- ! 配置文件，设置存放位置 -->
                     <configurationFile>src/main/resources/generator/generator-config.xml</configurationFile>
                     <overwrite>true</overwrite>
                     <verbose>true</verbose>
