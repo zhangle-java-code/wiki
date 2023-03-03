@@ -36,7 +36,7 @@ public class TestController {
     //@PutMapping("/hello")
     //@DeleteMapping("/hello")
     public String hello(){
-        return "hello world1," + testHello;
+        return "hello world2," + testHello;
     }
 
 
