@@ -73,6 +73,7 @@ public class EbookSnapshot {
         this.voteIncrease = voteIncrease;
     }
 
+    // ? StringBuilders are more efficient than concatenating strings with the + operator
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

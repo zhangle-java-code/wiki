@@ -38,14 +38,14 @@ public class EbookService {
      * @return
      */
     public PageResp<EbookQueryResp> list(EbookQueryReq req) {
-        //! 1. 条件查询: Example
-        //! 2. 创建查询实例
-        EbookExample ebookExample = new EbookExample();
-        EbookExample.Criteria criteria = ebookExample.createCriteria();
+
+        EbookExample ebookExample = new EbookExample();                 //! 1. 条件查询: Example //! 2. 创建查询实例
+        EbookExample.Criteria criteria = ebookExample.createCriteria();   // 相当于where条件
         //! 3. 添加查询条件
         //! 4. 二级分类查询
         if (!ObjectUtils.isEmpty(req.getName())) {
-            criteria.andNameLike("%" + req.getName() + "%");
+            // 左匹配和有匹配
+            criteria.andNameLike("%" + req.getName() + "%"); // 模糊查询
         }
         if (!ObjectUtils.isEmpty(req.getCategoryId2())) {
             criteria.andCategory2IdEqualTo(req.getCategoryId2());

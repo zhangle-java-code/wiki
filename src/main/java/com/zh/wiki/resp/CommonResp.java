@@ -43,6 +43,8 @@ public class CommonResp<T> {
     }
 
     // ? toString 内容如何生成, 有什么作用，生成方式不一致
+    // ? 为什么这里不用 @Override
+    // ? StringBuffer 和 StringBuilder 的区别
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("ResponseDto{");
