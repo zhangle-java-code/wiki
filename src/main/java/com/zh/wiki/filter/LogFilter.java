@@ -3,7 +3,7 @@ package com.zh.wiki.filter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-//? 过滤器是servlet的概念，过滤器是给netty 或 tomcat
+//? 过滤器是servlet的概念，过滤器是给netty 或 tomcat 容器使用
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
