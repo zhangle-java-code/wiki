@@ -1,5 +1,6 @@
 package com.zh.wiki.controller;
 
+import com.mysql.cj.log.Log;
 import com.zh.wiki.req.EbookQueryReq;
 import com.zh.wiki.req.EbookSaveReq;
 import com.zh.wiki.resp.CommonResp;
@@ -7,6 +8,8 @@ import com.zh.wiki.resp.EbookQueryResp;
 import com.zh.wiki.resp.PageResp;
 import com.zh.wiki.service.EbookService;
 //? annotation
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 //? Resource
 import javax.annotation.Resource;
@@ -14,9 +17,13 @@ import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/ebook")
 public class EbookController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(EbookController.class);
+
     @Resource
     private EbookService ebookService;
 
@@ -46,10 +53,12 @@ public class EbookController {
         return resp;
     }
 
+    // 编辑和新增放在一起了
     @PostMapping("/save")
     public CommonResp save(@RequestBody EbookSaveReq req) {
         CommonResp resp = new CommonResp<>();
         ebookService.save(req);
+        //LOG.warn("正常反馈");
         return resp;
     }
     @DeleteMapping("/delete/{id}")
