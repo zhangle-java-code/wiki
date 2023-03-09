@@ -147,7 +147,7 @@ public class EbookService {
         if (ObjectUtils.isEmpty(req.getId())) {
             // ! 新增
             // TODO: 2020/3/24 新增时，需要设置主键
-            // !学法算法
+            // !雪花法算法
             ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
         } else {

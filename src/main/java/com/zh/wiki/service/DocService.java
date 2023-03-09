@@ -121,7 +121,10 @@ public class DocService {
         } else {
             // 更新
             docMapper.updateByPrimaryKey(doc);
-            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            // ? updateByPrimaryKeyWithBLOBs
+            // 为什么不能使用updateByPrimaryKey，因为updateByPrimaryKey不会更新BLOB字段
+            // !mediumtext 用于存储大量文本数据，最大长度为 16,777,215 个字符（2^24 - 1）。
+            int count =  contentMapper.updateByPrimaryKeyWithBLOBs(content);
             if (count == 0) {
                 contentMapper.insert(content);
             }
@@ -133,6 +136,7 @@ public class DocService {
     }
 
     public void delete(List<String> ids) {
+        // 批量删除
         DocExample docExample = new DocExample();
         DocExample.Criteria criteria = docExample.createCriteria();
         criteria.andIdIn(ids);

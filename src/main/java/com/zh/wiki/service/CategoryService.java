@@ -47,6 +47,7 @@ public class CategoryService {
         CategoryExample categoryExample = new CategoryExample();
         categoryExample.setOrderByClause("sort asc");
         CategoryExample.Criteria criteria = categoryExample.createCriteria();
+
         PageHelper.startPage(req.getPage(), req.getSize());
         List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
 
@@ -54,6 +55,7 @@ public class CategoryService {
         LOG.info("总行数：{}", pageInfo.getTotal());
         LOG.info("总页数：{}", pageInfo.getPages());
 
+        // !copyList 和 copy的区别
         // List<CategoryResp> respList = new ArrayList<>();
         // for (Category category : categoryList) {
         //     // CategoryResp categoryResp = new CategoryResp();
