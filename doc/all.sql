@@ -95,7 +95,8 @@ insert into `doc` (id, ebook_id, parent, name, sort,view_count,vote_count) value
 insert into `doc` (id, ebook_id, parent, name, sort,view_count,vote_count) values (6, 1, 5, '文档1', 1, 0, 0);
 
 # 文档内容
-
+# ! mediumtext
+# 修改内容的时候，这里有坑，updateByPrimaryKey不会更新BLOB字段
 drop table if exists `content`;
 create table `content` (
     `id` bigint not null comment '文档id',
