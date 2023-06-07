@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //?
 import org.springframework.data.redis.core.RedisTemplate;
-//?
+// 加密算法工具
 import org.springframework.util.DigestUtils;
 //?
 import org.springframework.web.bind.annotation.*;
