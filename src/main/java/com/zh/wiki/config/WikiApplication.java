@@ -10,12 +10,12 @@ import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-// ! 扫描包 @ComponentScan({"com.zh", "com.test"})
+// ? 扫描包 @ComponentScan({"com.zh", "com.test"})
 // 默认只会扫描当前包下的类，如果要扫描其他包下的类，需要在@SpringBootApplication注解上添加 scanBasePackages 属性
 // 如果要扫描其他包下的类，需要在@SpringBootApplication注解上添加 ComponentScan 属性
 @ComponentScan("com.zh")
 @SpringBootApplication  // [概念] 注解
-// 和数据库交互持久层，指导mapper文件
+// ? 和数据库交互持久层，指导mapper文件
 @MapperScan("com.zh.wiki.mapper")
 // !启动定时任务
 //@EnableScheduling
