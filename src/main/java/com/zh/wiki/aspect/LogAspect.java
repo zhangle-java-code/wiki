@@ -26,6 +26,9 @@ import javax.servlet.http.HttpServletRequest;
 
 //! 切点和通知叫做切面
 //! 切面知识点: 前置、后置、环绕、异常
+
+// 设置注解执行的顺序
+// @Order(2)
 @Aspect
 @Component
 public class LogAspect {
@@ -85,6 +88,7 @@ public class LogAspect {
         LOG.info("aspect/LogAspect 请求参数: {}", JSONObject.toJSONString(arguments, excludefilter));
     }
 
+    // 环绕方法
     @Around("controllerPointcut()")
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();

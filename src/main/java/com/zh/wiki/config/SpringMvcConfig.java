@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.Resource;
 
+// ! 添加拦截器拦截,interceptor目录下面
 @Configuration
 public class SpringMvcConfig implements WebMvcConfigurer {
 
