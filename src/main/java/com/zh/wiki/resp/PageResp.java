@@ -23,7 +23,7 @@ public class PageResp<T> {
         this.list = list;
     }
 
-    //! 打印日志
+    //! 打印日志，序列化
     @Override
     public String toString() {
         return "PageResp{" +

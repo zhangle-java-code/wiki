@@ -4,6 +4,7 @@ public class BusinessException extends RuntimeException{
 
     private BusinessExceptionCode code;
 
+    // 有参构造
     public BusinessException (BusinessExceptionCode code) {
         super(code.getDesc());
         this.code = code;
